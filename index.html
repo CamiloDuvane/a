@@ -1264,16 +1264,16 @@ function handleLogin() {
   }
   const validUsers = [{
     name: 'Camilo Duvane',
-    password: '1234'
+    password: '6363'
   }, {
     name: 'Cíntia Mucumbi',
-    password: '4321'
+    password: '1234'
   }, {
     name: 'Camilo Wiliamo',
     password: '6363'
   }, {
     name: 'Milo',
-    password: '6363'
+    password: '1234'
   }];
   const user = validUsers.find(u => u.name === username && u.password === accessCode);
   if (!user) {
@@ -3089,6 +3089,10 @@ function getUserPermissions(username) {
       quiz: ['matematica', 'fisica', 'quimica', 'biologia', 'geologia', 'astronomia', 'estatistica', 'informatica', 'engenharia', 'historia', 'geografia', 'sociologia', 'filosofia', 'psicologia', 'antropologia', 'politica', 'economia', 'direito', 'teologia', 'portugues', 'ingles', 'biblia', 'literatura', 'comunicacao', 'linguistica', 'redacao', 'artes', 'musica', 'teatro', 'cinema', 'medicina', 'enfermagem', 'farmacia', 'odontologia', 'nutricao', 'fisioterapia', 'educacaoFisica', 'saude', 'administracao', 'contabilidade', 'marketing', 'rh', 'comercio', 'turismo', 'agronomia', 'arquitetura', 'logistica', 'pedagogia', 'didatica', 'psicopedagogia', 'educacaoEspecial', 'metodologia', 'programacao', 'ia', 'web', 'bancoDados', 'redes', 'robotica', 'seguranca', 'etica', 'sustentabilidade', 'ambiente', 'cultura', 'financeira', 'design', 'moda']
     },
     'Camilo Wiliamo': {
+      study: ['matematica', 'portugues', 'historia', 'biblia', 'quimica'],
+      quiz: ['matematica', 'portugues', 'historia', 'biblia', 'quimica']
+    }, 
+    'Milo': {
       study: ['matematica', 'portugues', 'historia', 'biblia', 'quimica'],
       quiz: ['matematica', 'portugues', 'historia', 'biblia', 'quimica']
     }
