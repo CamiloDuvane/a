@@ -2845,14 +2845,14 @@ function downloadResults() {
   }
   const doc = new jsPDF();
   let yPos = 20;
-  doc.addImage("https://example.com/moz-education-logo.svg", "SVG", 15, yPos, 40, 40);
+  doc.addImage("CWDSmartQuiz.png", "png", 15, yPos, 40, 40);
   yPos += 45;
   doc.setFontSize(16);
-  doc.text("Ministério da Educação", 105, yPos, {
+  doc.text("Quiz Educacional Moçambicano", 105, yPos, {
     align: "center"
   });
   yPos += 10;
-  doc.text("Quiz Educacional Moçambicano", 105, yPos, {
+  doc.text("CWD Smart Quiz", 105, yPos, {
     align: "center"
   });
   yPos += 20;
