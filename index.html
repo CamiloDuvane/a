@@ -1274,6 +1274,9 @@ function handleLogin() {
   }, {
     name: 'Milo',
     password: '1234'
+  }, {
+    name: 'Meira Macambe',
+    password: '3636'
   }];
   const user = validUsers.find(u => u.name === username && u.password === accessCode);
   if (!user) {
@@ -3093,6 +3096,14 @@ function getUserPermissions(username) {
       quiz: ['matematica', 'portugues', 'historia', 'biblia', 'quimica']
     }, 
     'Milo': {
+      study: ['matematica', 'portugues', 'historia', 'biblia', 'quimica'],
+      quiz: ['matematica', 'portugues', 'historia', 'biblia', 'quimica']
+    }, 
+    'Meira Macambe': {
+      study: ['matematica', 'portugues', 'historia', 'biblia', 'quimica'],
+      quiz: ['matematica', 'portugues', 'historia', 'biblia', 'quimica']
+    }, 
+    'Cíntia Mucumbi': {
       study: ['matematica', 'portugues', 'historia', 'biblia', 'quimica'],
       quiz: ['matematica', 'portugues', 'historia', 'biblia', 'quimica']
     }
