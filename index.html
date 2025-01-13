@@ -1225,7 +1225,7 @@ function handleRegistration() {
     return;
   }
   const message = `Novo pedido de registro:
-Nome: ${username}
+Nome: ${name}
 Email: ${email}
 Telefone: ${phone}
 Nível: ${academicLevel}
@@ -1233,7 +1233,7 @@ Senha: ${password}`;
   window.open(`https://wa.me/258842479404?text=${encodeURIComponent(message)}`, '_blank');
   const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers')) || [];
   const newUser = {
-    name: username,
+    name,
     email,
     phone,
     academicLevel,
