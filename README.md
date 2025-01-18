@@ -1,62 +1,90 @@
+### **Explicação Completa do Site CWD Smart Quiz com os Modos Disponíveis**  
 
+O site **CWD Smart Quiz** é uma ferramenta educativa desenvolvida para facilitar o aprendizado e a avaliação de estudantes. Ele possui funcionalidades projetadas para ajudar os alunos a estudar de forma eficiente, realizar questionários e acompanhar seus progressos. Além disso, o administrador pode gerenciar os quizzes, acompanhar o progresso dos alunos e personalizar conteúdos, mantendo a privacidade dos estudantes.  
 
-O **CWD Smart Quiz** é uma aplicação educacional interativa, projetada para estudantes e administradores. Ele oferece funcionalidades de aprendizagem e avaliação em várias disciplinas, com foco em um design intuitivo e ferramentas de análise. A seguir está uma descrição detalhada de suas funcionalidades:
-
-### **Interface e Design**
-- **Aparência**: Estilo moderno com cores primárias em azul e amarelo, layout responsivo e animações suaves para melhorar a experiência do usuário.
-- **Organização**: O aplicativo possui áreas dedicadas para login, registro, escolha de disciplinas, realização de questionários e análise de resultados.
+Abaixo está uma explicação detalhada sobre os **modos principais** e como cada um funciona.
 
 ---
 
-### **Funcionalidades Principais**
-#### **1. Login e Registro**
-- **Login Seguro**: Entrada com nome de usuário e senha.
-- **Registro**: Novo registro com informações como nome, email, telefone, nível acadêmico e senha.
-- **Recuperação de Senha**: Função para solicitar ajuda via WhatsApp.
+### **Modos para Usuários Comuns (Alunos)**  
 
-#### **2. Disciplinas**
-- Diversas opções, incluindo Matemática, Física, Química, Biologia, História e mais.
-- Cada disciplina contém material de estudo e questionários relacionados.
+1. **Modo Matéria Estudada**  
+   - **O que é?**  
+     Este modo permite ao aluno revisar conteúdos específicos antes de iniciar os questionários. Ele pode ser usado para estudar os tópicos cobrados no quiz.  
 
-#### **3. Questionários**
-- **Perguntas Interativas**: Apresenta questões de múltipla escolha com feedback imediato sobre as respostas.
-- **Progresso Visual**: Barra de progresso para indicar o desempenho do aluno durante o questionário.
-- **Pontuação e Relatórios**: Calcula automaticamente a pontuação e armazena o desempenho no histórico.
+   - **Como usar?**  
+     1. Após acessar o site, selecione a opção **Matéria Estudada** no menu.  
+     2. Escolha a matéria ou tópico desejado (exemplo: Matemática, Ciências, Língua Portuguesa).  
+     3. Leia os resumos, exemplos e explicações fornecidos.  
+     4. Use este conteúdo para se preparar antes de responder ao quiz correspondente.  
 
-#### **4. Painel de Administração**
-- **Gestão de Usuários**: Aprovação de registros, edição de informações e exclusão de contas.
-- **Histórico de Atividades**: Acompanhamento detalhado do desempenho de cada aluno por disciplina.
-- **Estatísticas Gerais**: Relatórios com tempo de uso, número de questões respondidas e desempenho por matéria.
+2. **Modo Questionário**  
+   - **O que é?**  
+     Este modo apresenta quizzes interativos que testam o conhecimento do aluno com base na matéria estudada.  
 
-#### **5. Relatórios e Análises**
-- Exibe estatísticas gerais, como tempo total online, número de questões respondidas e pontuação média.
-- Possibilidade de acessar respostas individuais para análises mais detalhadas.
+   - **Como usar?**  
+     1. Selecione a opção **Questionário** no menu.  
+     2. Escolha o quiz correspondente à matéria que você estudou.  
+     3. Responda às perguntas. Após cada resposta, o sistema dará feedback imediato, indicando se está correta ou errada.  
+     4. Finalize o quiz e confira sua pontuação ao final.  
 
----
+3. **Modo Ver Relatório**  
+   - **O que é?**  
+     Este modo permite que o aluno acompanhe seu desempenho e veja relatórios detalhados sobre suas atividades.  
 
-### **Fluxo do Usuário**
-1. **Cadastro e Login**:
-   - O usuário se registra ou realiza o login.
-   - Alunos aprovados têm acesso às disciplinas e questionários.
-2. **Escolha de Disciplinas**:
-   - Escolha uma disciplina para estudar ou realizar um questionário.
-3. **Realização de Questionários**:
-   - Responda perguntas, veja o feedback e acompanhe o progresso.
-4. **Acompanhamento de Desempenho**:
-   - Visualize relatórios e analise seu histórico de atividades.
+   - **Como usar?**  
+     1. Selecione **Ver Relatório** no menu.  
+     2. Acesse informações sobre:
+        - Quizzes realizados.  
+        - Percentual de acertos e erros.  
+        - Tempo médio gasto em cada quiz.  
+        - Progresso geral por matéria.  
 
 ---
 
-### **Administração e Controles**
-- **Painel do Administrador**:
-   - Gerencia registros pendentes e aprovados.
-   - Exibe históricos detalhados de desempenho.
-- **Criação e Exclusão de Usuários**:
-   - Funções para criar novos alunos ou remover usuários inativos.
+### **Modo Administrador (Encarregado ou Professor)**  
+
+1. **Acesso ao Modo Administrador**  
+   - O administrador deve acessar a área reservada com as credenciais específicas:  
+     - **Encarrega**: Senha principal para login.  
+     - **CWD**: Senha secundária para autenticação.  
+
+2. **Funcionalidades no Modo Administrador**  
+
+   a) **Gerenciamento de Quizzes**  
+      - Criação de quizzes personalizados.  
+      - Organização de quizzes por matéria e nível de dificuldade.  
+      - Configuração de tempo, número de perguntas e critérios de aprovação.  
+
+   b) **Acompanhamento do Progresso do Aluno**  
+      - O administrador pode acompanhar o desempenho individual de cada aluno sem acessar as respostas ou conteúdos específicos estudados.  
+      - Como funciona:  
+        1. Acesse o painel **Progresso dos Alunos**.  
+        2. Visualize relatórios gerais, como:  
+           - Percentual de acertos e erros por matéria.  
+           - Número de quizzes concluídos.  
+           - Gráficos de progresso ao longo do tempo.  
+        3. Essas informações são apresentadas de forma consolidada e anônima, respeitando a privacidade do conteúdo estudado pelos alunos.  
+
+   c) **Personalização de Materiais**  
+      - O administrador pode adicionar conteúdos novos em **Matéria Estudada**, permitindo que os alunos tenham acesso a mais materiais de referência.  
+      - É possível ajustar os tópicos com base no desempenho geral dos estudantes.  
+
+   d) **Estatísticas Gerais**  
+      - Acesso a estatísticas de todos os alunos para identificar pontos fracos e fortes da turma como um todo.  
 
 ---
 
-### **Aspectos Técnicos**
-- **Design Responsivo**: Adaptado para dispositivos móveis e desktops.
-- **Armazenamento Local**: Salva dados de usuários e progresso diretamente no navegador.
-- **Segurança**: Contas protegidas por senha e controles de acesso baseados em permissões.
+### **Resumo das Funcionalidades do Site**  
+
+- **Para Alunos**  
+  - Estudar tópicos específicos em **Matéria Estudada**.  
+  - Testar seus conhecimentos com quizzes no modo **Questionário**.  
+  - Acompanhar o desempenho pessoal no modo **Ver Relatório**.  
+
+- **Para Administradores**  
+  - Criar e gerenciar quizzes e materiais de estudo.  
+  - Acompanhar o progresso dos alunos de forma consolidada e sem comprometer sua privacidade.  
+  - Identificar as áreas que precisam de mais atenção e reforço.  
+
+O site **CWD Smart Quiz** é uma solução completa para aprendizado interativo, oferecendo suporte a professores e estudantes em um ambiente seguro, intuitivo e eficiente. Se precisar de mais detalhes ou ajuda, estou à disposição!
