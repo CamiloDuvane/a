@@ -832,7 +832,7 @@ body {
 <div class="container" id="app">
   <div id="mainMenu" class="main-menu" style="display: none;">
     <button class="button menu-button" onclick="showStudyContent()">Material de Estudo</button>
-    <button class="button menu-button" onclick="showQuizContent()">Question&#xe1;rios</button>
+    <button class="button menu-button" onclick="showQuizContent()">Questionários</button>
     <button class="button menu-button" onclick="viewAllResults()">Ver Resultados</button>
   </div>
   
@@ -848,8 +848,8 @@ body {
     <div id="errorMessage" style="display:none; color:red; text-align:center; margin:10px;"></div>
     <div class="login-form">
       <h2>Entrada</h2>
-      <input type="text" id="username" placeholder="Nome de Usu&#xe1;rio">
-      <input type="password" id="accessCode" placeholder="C&#xf3;digo de Acesso"> 
+      <input type="text" id="username" placeholder="Nome de Usuário">
+      <input type="password" id="accessCode" placeholder="Código de Acesso"> 
       <button class="button" onclick="handleLogin()">Entrar</button>
       <div class="auth-links">
         <a href="javascript:void(0)" onclick="showRegistration()">Registrar Nova Conta</a>
@@ -861,15 +861,15 @@ body {
   <div id="registrationForm" class="auth-container" style="display: none;">
     <div class="login-form">
       <h2>Registro</h2>
-      <input type="text" id="username" placeholder="Nome de Usu&#xe1;rio">
+      <input type="text" id="username" placeholder="Nome de Usuário">
       <input type="email" id="email" placeholder="Email">
       <input type="tel" id="phone" placeholder="Telefone">
       <select id="academicLevel">
-        <option value>Selecione o N&#xed;vel Acad&#xea;mico</option>
-        <option value="fundamental">Ensino Prim&#xe1;rio</option>
-        <option value="medio">Ensino M&#xe9;dio</option>
+        <option value>Selecione o Nível Acadêmico</option>
+        <option value="fundamental">Ensino Primário</option>
+        <option value="medio">Ensino Médio</option>
         <option value="superior">Ensino Superior</option>
-        <option value="pos">P&#xf3;s-gradua&#xe7;&#xe3;o</option>
+        <option value="pos">Pós-graduação</option>
       </select>
       <input type="password" id="password" placeholder="Senha">
       <button class="button" onclick="handleRegistration()">Registrar</button>
@@ -880,7 +880,7 @@ body {
   <div class="student-header" style="display: none;">
     <h2>Bem-vindo, <span id="studentNameHeader"></span></h2>
     <div class="nav-menu">
-      <button class="analytics-toggle" onclick="toggleAnalytics()">Ver Estat&#xed;sticas</button>
+      <button class="analytics-toggle" onclick="toggleAnalytics()">Ver Estatísticas</button>
     </div>
     
     <div class="analytics-grid" id="analyticsGrid" style="display: none;">
@@ -890,85 +890,85 @@ body {
         <div class="time-spent" id="totalTimeSpent">0h 0m 0s</div>
       </div>
       <div class="analytics-card">
-        <h3>Quest&#xf5;es Respondidas</h3>
+        <h3>Questões Respondidas</h3>
         <div class="time-spent" id="totalQuestions">0</div>
         <button class="button view-answers-button" onclick="viewAllResults()">Ver Resultados</button>
       </div>
       <div class="analytics-card">
         <h3>Disciplinas Estudadas</h3>
         <div class="time-spent" id="subjectsStudied">
-          <button class="button" onclick="showSubjectHistory()">Ver Hist&#xf3;rico por Disciplina</button>
+          <button class="button" onclick="showSubjectHistory()">Ver Histórico por Disciplina</button>
         </div>
       </div>
     </div>
   </div>
 
   <div id="subjectSelection" class="subject-grid" style="display: none;">
-    <div class="subject-card matematica" onclick="selectSubject(&apos;matematica&apos;)">Matem&#xe1;tica</div>
-    <div class="subject-card fisica" onclick="selectSubject(&apos;fisica&apos;)">F&#xed;sica</div>
-    <div class="subject-card quimica" onclick="selectSubject(&apos;quimica&apos;)">Qu&#xed;mica</div>
+    <div class="subject-card matematica" onclick="selectSubject(&apos;matematica&apos;)">Matemática</div>
+    <div class="subject-card fisica" onclick="selectSubject(&apos;fisica&apos;)">Física</div>
+    <div class="subject-card quimica" onclick="selectSubject(&apos;quimica&apos;)">Química</div>
     <div class="subject-card biologia" onclick="selectSubject(&apos;biologia&apos;)">Biologia</div>
     <div class="subject-card geologia" onclick="selectSubject(&apos;geologia&apos;)">Geologia</div>
     <div class="subject-card astronomia" onclick="selectSubject(&apos;astronomia&apos;)">Astronomia</div>
-    <div class="subject-card estatistica" onclick="selectSubject(&apos;estatistica&apos;)">Estat&#xed;stica</div>
-    <div class="subject-card informatica" onclick="selectSubject(&apos;informatica&apos;)">Inform&#xe1;tica</div>
+    <div class="subject-card estatistica" onclick="selectSubject(&apos;estatistica&apos;)">Estatística</div>
+    <div class="subject-card informatica" onclick="selectSubject(&apos;informatica&apos;)">Informática</div>
     <div class="subject-card engenharia" onclick="selectSubject(&apos;engenharia&apos;)">Engenharia</div>
-    <div class="subject-card historia" onclick="selectSubject(&apos;historia&apos;)">Hist&#xf3;ria</div>
+    <div class="subject-card historia" onclick="selectSubject(&apos;historia&apos;)">História</div>
     <div class="subject-card geografia" onclick="selectSubject(&apos;geografia&apos;)">Geografia</div>
     <div class="subject-card sociologia" onclick="selectSubject(&apos;sociologia&apos;)">Sociologia</div>
     <div class="subject-card filosofia" onclick="selectSubject(&apos;filosofia&apos;)">Filosofia</div>
     <div class="subject-card psicologia" onclick="selectSubject(&apos;psicologia&apos;)">Psicologia</div>
     <div class="subject-card antropologia" onclick="selectSubject(&apos;antropologia&apos;)">Antropologia</div>
-    <div class="subject-card politica" onclick="selectSubject(&apos;politica&apos;)">Ci&#xe9;ncia Pol&#xed;tica</div>
+    <div class="subject-card politica" onclick="selectSubject(&apos;politica&apos;)">Ciência Política</div>
     <div class="subject-card economia" onclick="selectSubject(&apos;economia&apos;)">Economia</div>
     <div class="subject-card direito" onclick="selectSubject(&apos;direito&apos;)">Direito</div>
     <div class="subject-card teologia" onclick="selectSubject(&apos;teologia&apos;)">Teologia</div>
-    <div class="subject-card portugues" onclick="selectSubject(&apos;portugues&apos;)">L&#xed;ngua Portuguesa</div>
-    <div class="subject-card ingles" onclick="selectSubject(&apos;ingles&apos;)">L&#xed;ngua Inglesa</div>
-    <div class="subject-card biblia" onclick="selectSubject(&apos;biblia&apos;)">Estudo B&#xed;blico</div>
+    <div class="subject-card portugues" onclick="selectSubject(&apos;portugues&apos;)">Língua Portuguesa</div>
+    <div class="subject-card ingles" onclick="selectSubject(&apos;ingles&apos;)">Língua Inglesa</div>
+    <div class="subject-card biblia" onclick="selectSubject(&apos;biblia&apos;)">Estudo Bíblico</div>
     <div class="subject-card literatura" onclick="selectSubject(&apos;literatura&apos;)">Literatura</div>
-    <div class="subject-card comunicacao" onclick="selectSubject(&apos;comunicacao&apos;)">Comunica&#xe7;&#xe3;o Social</div>
-    <div class="subject-card linguistica" onclick="selectSubject(&apos;linguistica&apos;)">Lingu&#xed;stica</div>
-    <div class="subject-card redacao" onclick="selectSubject(&apos;redacao&apos;)">Reda&#xe7;&#xe3;o</div>
+    <div class="subject-card comunicacao" onclick="selectSubject(&apos;comunicacao&apos;)">Comunicação Social</div>
+    <div class="subject-card linguistica" onclick="selectSubject(&apos;linguistica&apos;)">Linguística</div>
+    <div class="subject-card redacao" onclick="selectSubject(&apos;redacao&apos;)">Redação</div>
     <div class="subject-card artes" onclick="selectSubject(&apos;artes&apos;)">Artes Visuais</div>
-    <div class="subject-card musica" onclick="selectSubject(&apos;musica&apos;)">M&#xfa;sica</div>
+    <div class="subject-card musica" onclick="selectSubject(&apos;musica&apos;)">Música</div>
     <div class="subject-card teatro" onclick="selectSubject(&apos;teatro&apos;)">Teatro</div>
     <div class="subject-card cinema" onclick="selectSubject(&apos;cinema&apos;)">Cinema</div>
     <div class="subject-card medicina" onclick="selectSubject(&apos;medicina&apos;)">Medicina</div>
     <div class="subject-card enfermagem" onclick="selectSubject(&apos;enfermagem&apos;)">Enfermagem</div>
-    <div class="subject-card farmacia" onclick="selectSubject(&apos;farmacia&apos;)">Farm&#xe1;cia</div>
+    <div class="subject-card farmacia" onclick="selectSubject(&apos;farmacia&apos;)">Farmácia</div>
     <div class="subject-card odontologia" onclick="selectSubject(&apos;odontologia&apos;)">Odontologia</div>
-    <div class="subject-card nutricao" onclick="selectSubject(&apos;nutricao&apos;)">Nutri&#xe7;&#xe3;o</div>
+    <div class="subject-card nutricao" onclick="selectSubject(&apos;nutricao&apos;)">Nutrição</div>
     <div class="subject-card fisioterapia" onclick="selectSubject(&apos;fisioterapia&apos;)">Fisioterapia</div>
-    <div class="subject-card educacaoFisica" onclick="selectSubject(&apos;educacaoFisica&apos;)">Educa&#xe7;&#xe3;o F&#xed;sica</div>
-    <div class="subject-card saude" onclick="selectSubject(&apos;saude&apos;)">Sa&#xfa;de P&#xfa;blica</div>
-    <div class="subject-card administracao" onclick="selectSubject(&apos;administracao&apos;)">Administra&#xe7;&#xe3;o</div>
+    <div class="subject-card educacaoFisica" onclick="selectSubject(&apos;educacaoFisica&apos;)">Educação Física</div>
+    <div class="subject-card saude" onclick="selectSubject(&apos;saude&apos;)">Saúde Pública</div>
+    <div class="subject-card administracao" onclick="selectSubject(&apos;administracao&apos;)">Administração</div>
     <div class="subject-card contabilidade" onclick="selectSubject(&apos;contabilidade&apos;)">Contabilidade</div>
     <div class="subject-card marketing" onclick="selectSubject(&apos;marketing&apos;)">Marketing</div>
-    <div class="subject-card rh" onclick="selectSubject(&apos;rh&apos;)">Gest&#xe3;o de RH</div>
-    <div class="subject-card comercio" onclick="selectSubject(&apos;comercio&apos;)">Com&#xe9;rcio Internacional</div>
+    <div class="subject-card rh" onclick="selectSubject(&apos;rh&apos;)">Gestão de RH</div>
+    <div class="subject-card comercio" onclick="selectSubject(&apos;comercio&apos;)">Comércio Internacional</div>
     <div class="subject-card turismo" onclick="selectSubject(&apos;turismo&apos;)">Turismo e Hotelaria</div>
     <div class="subject-card agronomia" onclick="selectSubject(&apos;agronomia&apos;)">Agronomia</div>
     <div class="subject-card arquitetura" onclick="selectSubject(&apos;arquitetura&apos;)">Arquitetura</div>
-    <div class="subject-card logistica" onclick="selectSubject(&apos;logistica&apos;)">Log&#xed;stica</div>
+    <div class="subject-card logistica" onclick="selectSubject(&apos;logistica&apos;)">Logística</div>
     <div class="subject-card pedagogia" onclick="selectSubject(&apos;pedagogia&apos;)">Pedagogia</div>
-    <div class="subject-card didatica" onclick="selectSubject(&apos;didatica&apos;)">Did&#xe1;tica</div>
+    <div class="subject-card didatica" onclick="selectSubject(&apos;didatica&apos;)">Didática</div>
     <div class="subject-card psicopedagogia" onclick="selectSubject(&apos;psicopedagogia&apos;)">Psicopedagogia</div>
-    <div class="subject-card educacaoEspecial" onclick="selectSubject(&apos;educacaoEspecial&apos;)">Educa&#xe7;&#xe3;o Especial</div>
+    <div class="subject-card educacaoEspecial" onclick="selectSubject(&apos;educacaoEspecial&apos;)">Educação Especial</div>
     <div class="subject-card metodologia" onclick="selectSubject(&apos;metodologia&apos;)">Metodologia de Ensino</div>
-    <div class="subject-card programacao" onclick="selectSubject(&apos;programacao&apos;)">Programa&#xe7;&#xe3;o</div>
-    <div class="subject-card ia" onclick="selectSubject(&apos;ia&apos;)">Intelig&#xea;ncia Artificial</div>
+    <div class="subject-card programacao" onclick="selectSubject(&apos;programacao&apos;)">Programação</div>
+    <div class="subject-card ia" onclick="selectSubject(&apos;ia&apos;)">Inteligência Artificial</div>
     <div class="subject-card web" onclick="selectSubject(&apos;web&apos;)">Desenvolvimento Web</div>
     <div class="subject-card bancoDados" onclick="selectSubject(&apos;bancoDados&apos;)">Banco de Dados</div>
     <div class="subject-card redes" onclick="selectSubject(&apos;redes&apos;)">Redes de Computadores</div>
-    <div class="subject-card robotica" onclick="selectSubject(&apos;robotica&apos;)">Rob&#xf3;tica</div>
-    <div class="subject-card seguranca" onclick="selectSubject(&apos;seguranca&apos;)">Ciberseguran&#xe7;a</div>
-    <div class="subject-card etica" onclick="selectSubject(&apos;etica&apos;)">&#xc9;tica</div>
+    <div class="subject-card robotica" onclick="selectSubject(&apos;robotica&apos;)">Robótica</div>
+    <div class="subject-card seguranca" onclick="selectSubject(&apos;seguranca&apos;)">Cibersegurança</div>
+    <div class="subject-card etica" onclick="selectSubject(&apos;etica&apos;)">Ética</div>
     <div class="subject-card sustentabilidade" onclick="selectSubject(&apos;sustentabilidade&apos;)">Sustentabilidade</div>
     <div class="subject-card ambiente" onclick="selectSubject(&apos;ambiente&apos;)">Estudos Ambientais</div>
     <div class="subject-card cultura" onclick="selectSubject(&apos;cultura&apos;)">Cultura e Sociedade</div>
-    <div class="subject-card financeira" onclick="selectSubject(&apos;financeira&apos;)">Educa&#xe7;&#xe3;o Financeira</div>
-    <div class="subject-card design" onclick="selectSubject(&apos;design&apos;)">Design Gr&#xe1;fico</div>
+    <div class="subject-card financeira" onclick="selectSubject(&apos;financeira&apos;)">Educação Financeira</div>
+    <div class="subject-card design" onclick="selectSubject(&apos;design&apos;)">Design Gráfico</div>
     <div class="subject-card moda" onclick="selectSubject(&apos;moda&apos;)">Moda e Estilo</div>
   </div>
 
@@ -979,29 +979,29 @@ body {
     <h3 id="questionText"></h3>
     <div id="questionImage"></div>
     <div id="options" class="options"></div>
-    <button class="button" onclick="submitAnswer()">Pr&#xf3;xima</button>
+    <button class="button" onclick="submitAnswer()">Próxima</button>
     <button class="button back-button" onclick="returnToSubjects()">Voltar para Disciplinas</button>
   </div>
 
   <div id="reportsContainer" class="reports-container" style="display: none;">
     <div class="nav-menu">
-      <h2>Relat&#xf3;rio do Aluno</h2>
+      <h2>Relatório do Aluno</h2>
       <button class="button" onclick="returnToSubjects()">Voltar</button>
     </div>
     
     <div class="student-info">
       <div>
-        <h3>Informa&#xe7;&#xf5;es do Aluno</h3>
+        <h3>Informações do Aluno</h3>
         <p><strong>Nome:</strong> <span id="studentName"></span></p>
         <p><strong>Email:</strong> <span id="studentEmail"></span></p>
         <p><strong>Telefone:</strong> <span id="studentPhone"></span></p>
         <p><strong>Data de Registro:</strong> <span id="registrationDate"></span></p>
       </div>
       <div>
-        <h3>Estat&#xed;sticas Gerais</h3>
-        <p><strong>Total de Quest&#xf5;es:</strong> <span id="totalQuestions"></span></p>
-        <p><strong>Quest&#xf5;es Corretas:</strong> <span id="correctAnswers"></span></p>
-        <p><strong>M&#xe9;dia Geral:</strong> <span id="averageScore"></span>%</p>
+        <h3>Estatísticas Gerais</h3>
+        <p><strong>Total de Questões:</strong> <span id="totalQuestions"></span></p>
+        <p><strong>Questões Corretas:</strong> <span id="correctAnswers"></span></p>
+        <p><strong>Média Geral:</strong> <span id="averageScore"></span>%</p>
       </div>
     </div>
 
@@ -1011,16 +1011,16 @@ body {
     </div>
 
     <div class="history-section">
-      <h3>Hist&#xf3;rico de Atividades</h3>
+      <h3>Histórico de Atividades</h3>
       <table class="history-table">
         <thead>
           <tr>
             <th>Ordem</th>
             <th>Data/Hora</th>
-            <th>Quest&#xf5;es Respondidas</th>
-            <th>Pontua&#xe7;&#xe3;o</th>
+            <th>Questões Respondidas</th>
+            <th>Pontuação</th>
             <th>Tempo Gasto</th>
-            <th>A&#xe7;&#xf5;es</th>
+            <th>Ações</th>
           </tr>
         </thead>
         <tbody id="historyTableBody">
@@ -1032,8 +1032,8 @@ body {
 
   <div id="adminSearchPanel" class="auth-container" style="display: none;">
     <div class="login-form">
-      <h2>Pesquisar Usu&#xe1;rio</h2>
-      <input type="text" id="searchUsername" placeholder="Nome do Usu&#xe1;rio">
+      <h2>Pesquisar Usuário</h2>
+      <input type="text" id="searchUsername" placeholder="Nome do Usuário">
       <button class="button" onclick="searchUser()">Buscar</button>
       <button class="button back-button" onclick="adminLogout()">Voltar</button>
     </div>
@@ -1061,18 +1061,19 @@ body {
     <div class="contact-item">
       <i class="fas fa-envelope"></i>
       <p>Email</p>
-      <a href="mailto:camilowilliam0@gmail.com">camilowilliam0@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#5231333f3b3e3d253b3e3e3b333f6212353f333b3e7c313d3f"><span class="__cf_email__" data-cfemail="5231333f3b3e3d253b3e3e3b333f6212353f333b3e7c313d3f">[email&#160;protected]</span></a>
     </div>
   
     <div class="payment-info">
-      <h3>Informa&#xe7;&#xf5;es de Pagamento</h3>
+      <h3>Informações de Pagamento</h3>
       <p><strong>M-Pesa:</strong> 842479404</p>
       <p><strong>BIM:</strong> 293331493</p>
     </div>
   </div>
 </footer>
 
-<script>let currentQuestion = 0;
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+let currentQuestion = 0;
 let score = 0;
 let questions = [];
 let selectedOptionIndex = -1;
@@ -1084,6 +1085,7 @@ let currentPage = 0;
 let totalPages = 0;
 let idleTimer = null;
 const IDLE_TIMEOUT = 30000;
+
 function initializeDefaultAccounts() {
   const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers')) || [];
   if (approvedUsers.length === 0) {
@@ -1095,6 +1097,7 @@ function initializeDefaultAccounts() {
       password: '4321',
       registrationDate: new Date().toLocaleDateString(),
       status: 'approved',
+      blocked: false,
       activityHistory: []
     });
     approvedUsers.push({
@@ -1105,6 +1108,7 @@ function initializeDefaultAccounts() {
       password: '4321',
       registrationDate: new Date().toLocaleDateString(),
       status: 'approved',
+      blocked: false,
       activityHistory: []
     });
     approvedUsers.push({
@@ -1115,6 +1119,7 @@ function initializeDefaultAccounts() {
       password: '4321',
       registrationDate: new Date().toLocaleDateString(),
       status: 'approved',
+      blocked: false,
       activityHistory: []
     });
     approvedUsers.push({
@@ -1125,6 +1130,7 @@ function initializeDefaultAccounts() {
       password: '4321',
       registrationDate: new Date().toLocaleDateString(),
       status: 'approved',
+      blocked: false,
       activityHistory: []
     });
     approvedUsers.push({
@@ -1135,27 +1141,31 @@ function initializeDefaultAccounts() {
       password: '3434',
       registrationDate: new Date().toLocaleDateString(),
       status: 'approved',
+      blocked: false,
       activityHistory: []
     });
     approvedUsers.push({
-      name: 'Vânia Nhabete',
+      name: 'Vânia Nhabete', 
       email: '',
       phone: '845995488',
       academicLevel: 'medio',
       password: '1234',
       registrationDate: new Date().toLocaleDateString(),
       status: 'approved',
+      blocked: false,
       activityHistory: []
     });
     localStorage.setItem('approvedUsers', JSON.stringify(approvedUsers));
   }
 }
 document.addEventListener('DOMContentLoaded', initializeDefaultAccounts);
+
 function initializeStudentDashboard() {
   startTime = new Date();
   localStorage.setItem('startTime', startTime.getTime());
   updateAnalytics();
 }
+
 function loadStudentHistory() {
   const currentUser = JSON.parse(localStorage.getItem('currentUser'));
   if (!currentUser || !currentUser.activityHistory) return;
@@ -1197,6 +1207,7 @@ function loadStudentHistory() {
     subjectCounter++;
   });
 }
+
 function toggleAnalytics() {
   const analyticsGrid = document.getElementById('analyticsGrid');
   const subjectSelection = document.getElementById('subjectSelection');
@@ -1209,12 +1220,14 @@ function toggleAnalytics() {
     subjectSelection.style.display = 'grid';
   }
 }
+
 function returnFromAnalytics() {
   const analyticsGrid = document.getElementById('analyticsGrid');
   const subjectSelection = document.getElementById('subjectSelection');
   analyticsGrid.style.display = 'none';
   subjectSelection.style.display = 'grid';
 }
+
 function updateAnalytics() {
   const now = new Date();
   const timeSpentSeconds = Math.floor((now - startTime) / 1000);
@@ -1227,12 +1240,16 @@ function updateAnalytics() {
     <button class="button" onclick="showSubjectHistory()">Ver Histórico por Disciplina</button>
   `;
 }
+
 function showSubjectHistory() {
   const currentUser = JSON.parse(localStorage.getItem('currentUser'));
   if (!currentUser || !currentUser.activityHistory) {
     alert('Nenhum histórico disponível');
     return;
   }
+  const sortedHistory = [...currentUser.activityHistory].sort((a, b) => {
+    return new Date(b.date) - new Date(a.date);
+  });
   const modal = document.createElement('div');
   modal.className = 'answer-modal';
   modal.innerHTML = `
@@ -1243,7 +1260,7 @@ function showSubjectHistory() {
     </div>
   `;
   const subjectList = modal.querySelector('.subject-list');
-  const groupedBySubject = currentUser.activityHistory.reduce((acc, activity) => {
+  const groupedBySubject = sortedHistory.reduce((acc, activity) => {
     if (!acc[activity.subject]) {
       acc[activity.subject] = [];
     }
@@ -1265,6 +1282,7 @@ function showSubjectHistory() {
     if (e.target === modal) modal.remove();
   };
 }
+
 function showSubjectDetails(subject, activities) {
   const modal = document.createElement('div');
   modal.className = 'answer-modal';
@@ -1276,13 +1294,13 @@ function showSubjectDetails(subject, activities) {
     </div>
   `;
   const answersList = modal.querySelector('.answers-list');
-  activities.forEach((activity, index) => {
+  activities.forEach((activity, activityIndex) => {
     const sessionDiv = document.createElement('div');
     sessionDiv.className = 'session-answers';
     const date = new Date(activity.date).toLocaleDateString();
     const time = new Date(activity.date).toLocaleTimeString();
     sessionDiv.innerHTML = `
-      <h4>Sessão ${index + 1} - ${date} ${time}</h4>
+      <h4>Sessão ${activityIndex + 1} - ${date} ${time}</h4>
       <p>Pontuação: ${activity.score}%</p>
       <p>Questões Respondidas: ${activity.questionsAnswered}</p>
     `;
@@ -1299,7 +1317,7 @@ function showSubjectDetails(subject, activities) {
         sessionDiv.appendChild(answerItem);
       });
     } else {
-      sessionDiv.innerHTML += '<p>Detalhes das respostas não disponíveis para esta sessão</p>';
+      sessionDiv.innerHTML += '<p>Detalhes das respostas não disponíveis para esta sessão.</p>';
     }
     answersList.appendChild(sessionDiv);
   });
@@ -1311,6 +1329,7 @@ function showSubjectDetails(subject, activities) {
     if (e.target === modal) modal.remove();
   };
 }
+
 function handleRegistration() {
   const username = document.getElementById('username').value;
   const email = document.getElementById('email').value;
@@ -1337,6 +1356,7 @@ Senha: ${password}`;
     password,
     registrationDate: new Date().toLocaleDateString(),
     status: 'approved',
+    blocked: false,
     activityHistory: []
   };
   approvedUsers.push(newUser);
@@ -1344,6 +1364,7 @@ Senha: ${password}`;
   alert('Registro enviado com sucesso!');
   backToLogin();
 }
+
 function handleLogin() {
   const username = document.getElementById('username').value;
   const accessCode = document.getElementById('accessCode').value;
@@ -1411,8 +1432,8 @@ function handleLogin() {
   }
   initializeStudentDashboard();
   setupIdleDetection();
-  sessionStorage.removeItem('visitedQuiz');
 }
+
 function showAdminPanel() {
   const loginForm = document.getElementById('loginForm');
   loginForm.style.display = 'none';
@@ -1438,6 +1459,7 @@ function showAdminPanel() {
   showPendingRegistrations();
   setupIdleDetection();
 }
+
 function showPendingRegistrations() {
   const pendingRegistrations = JSON.parse(localStorage.getItem('pendingRegistrations')) || [];
   const adminContent = document.querySelector('.admin-content');
@@ -1462,6 +1484,7 @@ function showPendingRegistrations() {
     });
   }
 }
+
 function showStudentList() {
   const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers')) || [];
   const adminContent = document.querySelector('.admin-content');
@@ -1477,15 +1500,21 @@ function showStudentList() {
       <h4>Aluno ${index + 1}</h4>
       <p>Nome: ${user.name}</p>
       <p>Email: ${user.email}</p>
+      <p>Status: ${user.blocked ? '<span style="color: red;">Bloqueado</span>' : '<span style="color: green;">Ativo</span>'}</p>
       <div class="button-group">
         <button class="view-details-button" onclick="viewStudentDetails(${index})">Editar</button>
         <button class="view-answers-button" onclick="viewStudentAnswers(${index})">Ver Respostas</button>
+        ${user.blocked ?
+          `<button class="approve-button" onclick="toggleBlockStudent(${index}, false)">Desbloquear</button>` :
+          `<button class="reject-button" onclick="toggleBlockStudent(${index}, true)">Bloquear</button>`
+        }
         <button class="reject-button" onclick="deleteUser(${index})">Apagar Usuário</button>
       </div>
     `;
     adminContent.appendChild(userCard);
   });
 }
+
 function createNewStudent() {
   const adminContent = document.querySelector('.admin-content');
   adminContent.innerHTML = `
@@ -1509,6 +1538,7 @@ function createNewStudent() {
     </div>
   `;
 }
+
 function saveNewStudent() {
   const name = document.getElementById('newStudentName').value;
   const email = document.getElementById('newStudentEmail').value;
@@ -1535,6 +1565,7 @@ Senha: ${password}`;
     password,
     registrationDate: new Date().toLocaleDateString(),
     status: 'approved',
+    blocked: false,
     activityHistory: []
   };
   approvedUsers.push(newUser);
@@ -1542,8 +1573,9 @@ Senha: ${password}`;
   alert('Registro enviado com sucesso!');
   showStudentList();
 }
+
 function viewStudentDetails(index) {
-  const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers'));
+  const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers')) || [];
   const user = approvedUsers[index];
   const adminContent = document.querySelector('.admin-content');
   adminContent.innerHTML = `
@@ -1570,8 +1602,9 @@ function viewStudentDetails(index) {
     </div>
   `;
 }
+
 function saveStudentEdits(index) {
-  const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers'));
+  const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers')) || [];
   const editedUser = {
     ...approvedUsers[index],
     name: document.getElementById('editName').value,
@@ -1589,16 +1622,19 @@ function saveStudentEdits(index) {
   alert('Alterações salvas com sucesso!');
   showStudentList();
 }
+
 function approveRegistration(index) {
   alert('O registro de novos usuários não está disponível neste momento.');
   return;
 }
+
 function rejectRegistration(index) {
   const pendingRegistrations = JSON.parse(localStorage.getItem('pendingRegistrations'));
   pendingRegistrations.splice(index, 1);
   localStorage.setItem('pendingRegistrations', JSON.stringify(pendingRegistrations));
   showPendingRegistrations();
 }
+
 function adminLogout() {
   if (idleTimer) {
     clearTimeout(idleTimer);
@@ -1626,6 +1662,7 @@ function adminLogout() {
   if (usernameField) usernameField.value = '';
   if (accessCodeField) accessCodeField.value = '';
 }
+
 function viewStudentAnswers(index) {
   const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers')) || [];
   const user = approvedUsers[index];
@@ -1662,11 +1699,11 @@ function viewStudentAnswers(index) {
       `;
       const answers = JSON.parse(sessionStorage.getItem(`answers_${session.id}`)) || [];
       if (answers.length > 0) {
-        answers.forEach((answer, answerIndex) => {
+        answers.forEach((answer, index) => {
           const answerItem = document.createElement('div');
           answerItem.className = `answer-item ${answer.isCorrect ? 'correct' : 'incorrect'}`;
           answerItem.innerHTML = `
-            <p><strong>Pergunta ${answerIndex + 1}:</strong> ${answer.question}</p>
+            <p><strong>Pergunta ${index + 1}:</strong> ${answer.question}</p>
             <p><strong>Resposta do aluno:</strong> ${answer.selectedAnswer}</p>
             <p><strong>Resposta correta:</strong> ${answer.correctAnswer}</p>
           `;
@@ -1680,6 +1717,7 @@ function viewStudentAnswers(index) {
     answersContainer.appendChild(subjectDiv);
   });
 }
+
 function viewAllResults() {
   const currentUser = JSON.parse(localStorage.getItem('currentUser'));
   if (!currentUser || !currentUser.activityHistory) {
@@ -1746,6 +1784,7 @@ function viewAllResults() {
     if (e.target === modal) modal.remove();
   };
 }
+
 function submitAnswer() {
   const currentSubject = localStorage.getItem('currentSubject');
   const questions = getQuestionsBySubject(currentSubject);
@@ -1774,6 +1813,7 @@ function submitAnswer() {
     finishQuiz();
   }
 }
+
 function showQuestion(index) {
   const currentSubject = localStorage.getItem('currentSubject');
   const questions = getQuestionsBySubject(currentSubject);
@@ -1800,6 +1840,7 @@ function showQuestion(index) {
     optionsContainer.appendChild(optionDiv);
   });
 }
+
 function finishQuiz() {
   const currentSubject = localStorage.getItem('currentSubject');
   const questions = getQuestionsBySubject(currentSubject);
@@ -1834,6 +1875,7 @@ function finishQuiz() {
   alert(`Quiz finalizado!\nPontuação: ${finalScore}%\nTempo gasto: ${formatTimeDuration(timeSpent)}`);
   returnToSubjects();
 }
+
 function returnToSubjects() {
   currentQuestion = 0;
   score = 0;
@@ -1845,10 +1887,12 @@ function returnToSubjects() {
   document.getElementById('subjectSelection').style.display = 'grid';
   updateAnalytics();
 }
+
 function showRegistration() {
   document.getElementById('loginForm').style.display = 'none';
   document.getElementById('registrationForm').style.display = 'block';
 }
+
 function showPasswordRecovery() {
   const username = document.getElementById('username').value;
   if (!username) {
@@ -1858,10 +1902,12 @@ function showPasswordRecovery() {
   const message = `Solicitação de recuperação de senha para usuário: ${username}`;
   window.open(`https://wa.me/258842479404?text=${encodeURIComponent(message)}`, '_blank');
 }
+
 function backToLogin() {
   document.getElementById('registrationForm').style.display = 'none';
   document.getElementById('loginForm').style.display = 'block';
 }
+
 function deleteUser(index) {
   if (confirm('Tem certeza que deseja apagar este usuário?')) {
     const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers'));
@@ -1870,6 +1916,7 @@ function deleteUser(index) {
     showStudentList();
   }
 }
+
 function showStudentHistory() {
   const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers')) || [];
   const adminContent = document.querySelector('.admin-content');
@@ -1897,9 +1944,10 @@ function showStudentHistory() {
     historyContainer.appendChild(userHistoryCard);
   });
 }
+
 function getQuestionsBySubject(subject) {
   const questionsBySubject = {
-matematica: [{
+    matematica: [{
       question: "Qual é a área de um triângulo com base de 8 cm e altura de 5 cm?",
       options: ["20 cm²", "30 cm²", "40 cm²", "25 cm²"],
       correct: 3
@@ -1938,184 +1986,6 @@ matematica: [{
     }, {
       question: "Quantos graus tem um ângulo reto?",
       options: ["45°", "90°", "120°", "180°"],
-      correct: 1
-    }, {
-      question: "Qual é a soma dos ângulos internos de um triângulo?",
-      options: ["90°", "180°", "270°", "360°"],
-      correct: 1
-    }, {
-      question: "Quanto é 15% de 200?",
-      options: ["15", "30", "20", "25"],
-      correct: 1
-    }, {
-      question: "Qual é o valor de 3³?",
-      options: ["6", "9", "27", "81"],
-      correct: 2
-    }, {
-      question: "Quantos lados tem um hexágono?",
-      options: ["4", "5", "6", "7"],
-      correct: 2
-    }, {
-  question: "Resolva: 5x = 25. Qual é o valor de x?",
-      options: ["3", "4", "5", "6"],
-      correct: 2
-    }, {
-      question: "Qual é a fórmula da área de um círculo?",
-      options: ["πr", "2πr", "πr²", "2πr²"],
-      correct: 2
-    }, {
-      question: "Qual é a raiz quadrada de 81?",
-      options: ["7", "8", "9", "10"],
-      correct: 2
-    }, {
-      question: "Quanto é 100 ÷ 4?",
-      options: ["20", "25", "30", "40"],
-      correct: 1
-    }, {
-      question: "Um triângulo com dois lados iguais é chamado de:",
-      options: ["Equilátero", "Isósceles", "Escaleno", "Retângulo"],
-      correct: 1
-    }, {
-      question: "Quantos segundos há em uma hora?",
-      options: ["3600", "2400", "1800", "1200"],
-      correct: 0
-    }, {
-      question: "Qual é o menor número primo?",
-      options: ["0", "1", "2", "3"],
-      correct: 2
-    }, {
-      question: "Quanto é 7 x 8?",
-      options: ["48", "54", "56", "64"],
-      correct: 2
-    }, {
-      question: "Qual é o volume de um cubo com aresta de 5 cm?",
-      options: ["25 cm³", "100 cm³", "125 cm³", "150 cm³"],
-      correct: 2
-    }, {
-      question: "Qual é o valor de 2² + 3²?",
-      options: ["9", "13", "14", "18"],
-      correct: 1
-    }, {
-      question: "Quanto é 1/4 + 1/2?",
-      options: ["1/2", "3/4", "1", "5/4"],
-      correct: 1
-    }, {
-      question: "Se um retângulo tem 5 cm de largura e 10 cm de comprimento, qual é sua área?",
-      options: ["15 cm²", "25 cm²", "50 cm²", "75 cm²"],
-      correct: 2
-    }, {
-      question: "Quantos lados tem um dodecágono?",
-      options: ["8", "10", "12", "14"],
-      correct: 2
-    }, {
-      question: "Se x = 3, qual é o valor de 2x + 5?",
-      options: ["8", "9", "10", "11"],
-      correct: 3
-    }, {
-      question: "Qual é o nome da figura com 4 lados iguais e 4 ângulos retos?",
-      options: ["Quadrado", "Retângulo", "Losango", "Trapézio"],
-      correct: 0
-    }, {
-      question: "Quanto é 0,2 x 0,5?",
-      options: ["0,01", "0,1", "0,2", "0,25"],
-      correct: 3
-    }, {
-      question: "Qual é o maior divisor comum de 18 e 24?",
-      options: ["2", "3", "6", "9"],
-      correct: 2
-    }, {
-      question: "Quanto é 2⁵?",
-      options: ["16", "25", "32", "64"],
-      correct: 2
-    }, {
-      question: "Resolva: 10 - (2 + 3).",
-      options: ["3", "4", "5", "6"],
-      correct: 1
-    }, {
-      question: "Se 1 metro = 100 cm, quantos centímetros há em 2,5 metros?",
-      options: ["200 cm", "250 cm", "300 cm", "350 cm"],
-      correct: 1
-    }, {
-      question: "Quanto é 5! (fatorial de 5)?",
-      options: ["20", "60", "100", "120"],
-      correct: 3
-}, {
-      question: "Resolva: x/4 = 6. Qual é o valor de x?",
-      options: ["12", "16", "20", "24"],
-      correct: 3
-    }, {
-      question: "Quanto é a metade de 3/4?",
-      options: ["1/8", "3/8", "1/2", "5/8"],
-      correct: 1
-    }, {
-      question: "Qual é o nome do polígono com 8 lados?",
-      options: ["Pentágono", "Heptágono", "Octógono", "Decágono"],
-      correct: 2
-    }, {
-      question: "Qual é a área de um quadrado com lado de 9 cm?",
-      options: ["18 cm²", "36 cm²", "45 cm²", "81 cm²"],
-      correct: 3
-    }, {
-      question: "Resolva: 3² + 4².",
-      options: ["12", "16", "25", "32"],
-      correct: 2
-    }, {
-      question: "Quanto é 3/4 de 16?",
-      options: ["8", "10", "12", "14"],
-      correct: 2
-    }, {
-      question: "Qual é o valor de 100% de 50?",
-      options: ["25", "50", "75", "100"],
-      correct: 1
-    }, {
-      question: "Quanto é 1/3 + 1/6?",
-      options: ["1/6", "1/3", "1/2", "2/3"],
-      correct: 2
-    }, {
-      question: "Se um ângulo mede 45°, qual é o seu ângulo complementar?",
-      options: ["45°", "90°", "135°", "180°"],
-      correct: 0
-    }, {
-      question: "Qual é o valor de 8²?",
-      options: ["48", "56", "64", "72"],
-      correct: 2
-    }, {
-      question: "Quanto é 0,01 x 1000?",
-      options: ["0,1", "1", "10", "100"],
-      correct: 1
-    }, {
-      question: "Quantos minutos há em 1,5 horas?",
-      options: ["60", "75", "90", "120"],
-      correct: 2
-    }, {
-      question: "Resolva: 2x - 5 = 9. Qual é o valor de x?",
-      options: ["5", "6", "7", "8"],
-      correct: 2
-    }, {
-      question: "Quanto é 1² + 2² + 3²?",
-      options: ["9", "12", "14", "16"],
-      correct: 2
-    }],
-
-    portugues: [{
-      question: "Identifique o substantivo abstrato na frase: 'A felicidade é uma conquista diária.'",
-      options: ["Felicidade", "Conquista", "Diária", "Nenhuma das anteriores"],
-      correct: 0
-    }, {
-      question: "Qual é a função da palavra 'rápido' em: 'Ele foi rápido para concluir a tarefa.'?",
-      options: ["Substantivo", "Adjetivo", "Verbo", "Advérbio"],
-      correct: 1
-    }, {
-      question: "Qual é o plural de 'pão'?",
-      options: ["Pães", "Pãos", "Pões", "Paes"],
-      correct: 0
-    }, {
-      question: "Complete a frase: 'Eu ________ estudar mais.'",
-      options: ["devemos", "deveria", "dever", "deverei"],
-      correct: 1
-    }, {
-      question: "Qual das frases contém uma metáfora?",
-      options: ["Ele é forte como um leão", "A vida é um palco", "Estava tão feliz que parecia flutuar", "Estava tão quente quanto o deserto"],
       correct: 1
     }, {
       question: "Qual é o sujeito na frase: 'Os alunos estudam para o exame final'?",
@@ -2162,8 +2032,8 @@ matematica: [{
       options: ["Antecipar", "Adiar", "Resolver", "Confirmar"],
       correct: 1
     }, {
-      question: "Qual é a figura de linguagem usada na frase: 'O vento sussurrava entre as árvores'?",
-      options: ["Metáfora", "Personificação", "Ironia", "Eufemismo"],
+      question: "Qual é a figura de linguagem usada na frase: 'Ele era forte como um touro'?",
+      options: ["Metáfora", "Comparação", "Ironia", "Personificação"],
       correct: 1
     }, {
       question: "Qual é o verbo da frase: 'Nós compramos um presente ontem'?",
@@ -2182,9 +2052,111 @@ matematica: [{
       options: ["Presente", "Pretérito perfeito", "Pretérito imperfeito", "Futuro do presente"],
       correct: 2
     }, {
-      question: "Qual é o gênero do substantivo 'análise'?",
-      options: ["Masculino", "Feminino", "Neutro", "Ambíguo"],
+      question: "Qual é a função da vírgula na frase: 'João, venha aqui agora.'?",
+      options: ["Separar termos iguais", "Indicar uma pausa", "Separar o vocativo", "Marcar uma enumeração"],
+      correct: 2
+    }, {
+      question: "Qual é a classificação da palavra 'felizmente'?",
+      options: ["Substantivo", "Adjetivo", "Advérbio", "Verbo"],
+      correct: 2
+    }, {
+      question: "Qual é o termo que complementa o verbo na frase: 'Nós assistimos ao filme.'?",
+      options: ["Objeto direto", "Objeto indireto", "Adjunto adverbial", "Sujeito"],
       correct: 1
+    }, {
+      question: "Qual é o tipo de discurso usado na frase: 'Maria disse: 'Eu não quero ir ao parque'.'?",
+      options: ["Discurso direto", "Discurso indireto", "Discurso indireto livre", "Discurso narrativo"],
+      correct: 0
+    }, {
+      question: "Qual é a importância de Mondlane no contexto histórico de Moçambique?",
+      options: ["Articulou a luta de libertação", "Governou o país após a independência", "Liderou a guerrilha da RENAMO", "Organizou a economia pós-guerra"],
+      correct: 0
+    }],
+
+    portugues: [{
+      question: "Identifique o substantivo abstrato na frase: 'A felicidade é uma conquista diária.'",
+      options: ["Felicidade", "Conquista", "Diária", "Nenhuma das anteriores"],
+      correct: 0
+    }, {
+      question: "Qual é a função da palavra 'rápido' em: 'Ele foi rápido para concluir a tarefa.'?",
+      options: ["Substantivo", "Adjetivo", "Verbo", "Advérbio"],
+      correct: 1
+    }, {
+      question: "Qual é o plural de 'pão'?",
+      options: ["Pães", "Pãos", "Pões", "Paes"],
+      correct: 0
+    }, {
+      question: "Complete a frase: 'Eu ________ estudar mais.'",
+      options: ["devemos", "deveria", "dever", "deverei"],
+      correct: 1
+    }, {
+      question: "Qual é a figura de linguagem usada na frase: 'O vento sussurrava entre as árvores'?",
+      options: ["Metáfora", "Personificação", "Ironia", "Eufemismo"],
+      correct: 1
+    }, {
+      question: "Qual é o sujeito na frase: 'Os alunos estudam para o exame final'?",
+      options: ["Os alunos", "Estudam", "Exame final", "Para o exame"],
+      correct: 0
+    }, {
+      question: "Classifique a oração: 'Quando cheguei, ele já tinha saído.'",
+      options: ["Coordenada", "Subordinada", "Simples", "Nominal"],
+      correct: 1
+    }, {
+      question: "Identifique o verbo transitivo direto: 'Ela comprou um livro novo.'",
+      options: ["Ela", "Comprou", "Livro", "Novo"],
+      correct: 1
+    }, {
+      question: "Qual é o tempo verbal de 'Nós estudaremos juntos amanhã'?",
+      options: ["Presente", "Passado", "Futuro do Presente", "Futuro do Pretérito"],
+      correct: 2
+    }, {
+      question: "O que é uma interjeição?",
+      options: ["Palavra que expressa emoção ou sentimento", "Palavra que liga orações", "Palavra que determina o verbo", "Palavra que indica lugar"],
+      correct: 0
+    }, {
+      question: "Qual é o sujeito na frase: 'Os alunos estudam na biblioteca.'?",
+      options: ["Os alunos", "Estudam", "Na biblioteca", "Os alunos estudam"],
+      correct: 0
+    }, {
+      question: "Qual é o tipo de predicado na frase: 'A menina é inteligente.'?",
+      options: ["Verbal", "Nominal", "Verbo-nominal", "Predicativo"],
+      correct: 1
+    }, {
+      question: "Qual é o plural de 'cidadão'?",
+      options: ["Cidadões", "Cidadãos", "Cidades", "Cidadãoses"],
+      correct: 1
+    }, {
+      question: "Qual é o antônimo de 'feliz'?",
+      options: ["Triste", "Contente", "Alegre", "Descontraído"],
+      correct: 0
+    }, {
+      question: "O que é um texto dissertativo argumentativo?",
+      options: ["Um texto que narra fatos", "Um texto que descreve pessoas", "Um texto que apresenta argumentos para defender uma tese", "Um texto que explica um processo"],
+      correct: 2
+    }, {
+      question: "Qual é o significado da palavra 'procrastinar'?",
+      options: ["Antecipar", "Adiar", "Resolver", "Confirmar"],
+      correct: 1
+    }, {
+      question: "Qual é a figura de linguagem usada na frase: 'Ele era forte como um touro'?",
+      options: ["Metáfora", "Comparação", "Ironia", "Personificação"],
+      correct: 1
+    }, {
+      question: "Qual é o verbo da frase: 'Nós compramos um presente ontem'?",
+      options: ["Compramos", "Um", "Presente", "Ontem"],
+      correct: 0
+    }, {
+      question: "Qual é o significado da expressão 'ficar de molho'?",
+      options: ["Tomar banho", "Estar em repouso", "Estar cozinhando", "Estar em apuros"],
+      correct: 1
+    }, {
+      question: "O que indica o prefixo 're-' na palavra 'rever'?",
+      options: ["Novidade", "Repetição", "Contrário", "Positividade"],
+      correct: 1
+    }, {
+      question: "Qual é o tempo verbal na frase: 'Eles estavam brincando no parque.'?",
+      options: ["Presente", "Pretérito perfeito", "Pretérito imperfeito", "Futuro do presente"],
+      correct: 2
     }, {
       question: "Qual é a função da vírgula na frase: 'João, venha aqui agora.'?",
       options: ["Separar termos iguais", "Indicar uma pausa", "Separar o vocativo", "Marcar uma enumeração"],
@@ -2202,21 +2174,9 @@ matematica: [{
       options: ["Discurso direto", "Discurso indireto", "Discurso indireto livre", "Discurso narrativo"],
       correct: 0
     }, {
-      question: "Qual é o significado da palavra 'altruísmo'?",
-      options: ["Egoísmo", "Solidariedade", "Alegria", "Indiferença"],
-      correct: 1
-    }, {
-      question: "Qual é a figura de linguagem em 'Ele era forte como um touro'?",
-      options: ["Metáfora", "Comparação", "Ironia", "Personificação"],
-      correct: 1
-    }, {
-      question: "Qual é o plural de 'caráter'?",
-      options: ["Caráteres", "Caratares", "Carateis", "Caratazes"],
-      correct: 0
-    }, {
-      question: "Qual é o sinônimo de 'cômico'?",
-      options: ["Trágico", "Engraçado", "Sério", "Neutro"],
-      correct: 1
+      question: "Qual é a importância das máscaras Mapiko na cultura moçambicana?",
+      options: ["São usadas em rituais de iniciação", "Representam espíritos ancestrais", "Ambas as anteriores", "Apenas para decoração"],
+      correct: 2
     }],
 
     historia: [{
@@ -2283,98 +2243,6 @@ matematica: [{
       question: "O que era o sistema de trabalho forçado em Moçambique durante a colonização?",
       options: ["Sistema de escravidão", "Trabalho compulsório em plantações", "Contrato de trabalho justo", "Emprego para todos"],
       correct: 1
-    }, {
-      question: "Qual foi o papel da guerrilha na luta pela independência de Moçambique?",
-      options: ["Conquistar áreas estratégicas", "Negociar com Portugal", "Unir os partidos políticos", "Difundir a cultura local"],
-      correct: 0
-    }, {
-      question: "Quem assinou o Acordo de Lusaka em 1974?",
-      options: ["FRELIMO e Portugal", "RENAMO e FRELIMO", "Portugal e ONU", "Moçambique e África do Sul"],
-      correct: 0
-    }, {
-      question: "Qual foi a capital de Moçambique antes da independência?",
-      options: ["Lourenço Marques", "Maputo", "Beira", "Nampula"],
-      correct: 0
-    }, {
-      question: "Qual foi o efeito da Guerra Fria em Moçambique?",
-      options: ["Intensificou a Guerra Civil", "Encerrou a luta de libertação", "Isolou o país", "Favoreceu o comércio"],
-      correct: 0
-    }, {
-      question: "O que representou a proclamação da independência de Moçambique?",
-      options: ["Fim do colonialismo português", "Início da escravidão", "Separação de regiões", "Unificação de países africanos"],
-      correct: 0
-    }, {
-      question: "Em que ano Samora Machel faleceu?",
-      options: ["1986", "1980", "1992", "1975"],
-      correct: 0
-    }, {
-      question: "Em que ano Samora Machel faleceu?",
-      options: ["1986", "1980", "1992", "1975"],
-      correct: 0
-    }, {
-      question: "Qual foi o principal desafio após a independência de Moçambique?",
-      options: ["Reconstrução nacional", "Fim do comércio internacional", "Expansão territorial", "Colonização interna"],
-      correct: 0
-    }, {
-      question: "Quem sucedeu Samora Machel como presidente de Moçambique?",
-      options: ["Joaquim Chissano", "Filipe Nyusi", "Eduardo Mondlane", "Armando Guebuza"],
-      correct: 0
-    }, {
-      question: "O que foi o Programa de Ajustamento Estrutural em Moçambique?",
-      options: ["Reforma econômica", "Plano de guerra", "Acordo de paz", "Projeto de saúde"],
-      correct: 0
-    }, {
-      question: "Quem foi André Matsangaissa?",
-      options: ["Primeiro líder da RENAMO", "Fundador da FRELIMO", "Presidente de Moçambique", "Governador colonial"],
-      correct: 0
-    }, {
-      question: "Qual era o objetivo da RENAMO durante a Guerra Civil?",
-      options: ["Tomar o poder", "Manter a paz", "Abolir a independência", "Unificar a África"],
-      correct: 0
-    }, {
-      question: "Qual foi o papel da ONU no processo de paz em Moçambique?",
-      options: ["Supervisionar o cessar-fogo", "Financiar a guerra", "Apoiar a colonização", "Organizar eleições"],
-      correct: 0
-    }, {
-      question: "O que simboliza a bandeira de Moçambique?",
-      options: ["Luta e esperança", "Colonização", "Independência europeia", "Neutralidade"],
-      correct: 0
-    }, {
-      question: "Qual foi o impacto da Guerra Civil na economia moçambicana?",
-      options: ["Destruição de infraestruturas", "Aumento da produção", "Fortalecimento do comércio", "Melhora na educação"],
-      correct: 0
-    }, {
-      question: "Quando foram realizadas as primeiras eleições multipartidárias em Moçambique?",
-      options: ["1994", "1992", "1986", "2000"],
-      correct: 0
-    }, {
-      question: "Qual é a principal língua oficial de Moçambique?",
-      options: ["Português", "Inglês", "Swahili", "Xangana"],
-      correct: 0
-    }, {
-      question: "Qual foi a importância de Mondlane no contexto histórico de Moçambique?",
-      options: ["Articulou a luta de libertação", "Governou o país após a independência", "Liderou a guerrilha da RENAMO", "Organizou a economia pós-guerra"],
-      correct: 0
-    }, {
-      question: "Quem colonizou Moçambique antes de Portugal?",
-      options: ["Árabes", "Ingleses", "Chineses", "Espanhóis"],
-      correct: 0
-    }, {
-      question: "O que foi o Tratado de Lourenço Marques?",
-      options: ["Acordo entre portugueses e ingleses", "Independência de Moçambique", "Divisão territorial africana", "Pacto de comércio"],
-      correct: 0
-    }, {
-      question: "Qual foi o papel da escravidão na colonização de Moçambique?",
-      options: ["Exportação de mão de obra", "Fim da economia agrícola", "Fortalecimento do comércio local", "Expansão do cristianismo"],
-      correct: 0
-    }, {
-      question: "Quando foi abolida a escravidão em Moçambique?",
-      options: ["1878", "1884", "1869", "1900"],
-      correct: 2
-    }, {
-      question: "Quem foram os Nguni na história de Moçambique?",
-      options: ["Povo guerreiro", "Colonizadores", "Mercadores europeus", "Exploradores portugueses"],
-      correct: 0
     }, {
       question: "Qual foi a principal consequência da Conferência de Berlim para Moçambique?",
       options: ["Divisão colonial africana", "Independência política", "Unificação de tribos", "Fim do comércio europeu"],
@@ -2477,7 +2345,7 @@ matematica: [{
       options: ["O Elefante", "O Leão", "A Mulher", "O Homem"], 
       correct: 3
       }, {
-      question: "Qual Das alternativas descreve a criação do Homem segundo a Bíblia? ",
+      question: "Qual é a criação do Homem segundo a Bíblia? ",
       options: ["Do pó da terra", "Da luz do sol", "Da água do mar", "Criado a partir das estrelas cósmicas"], 
       correct: 0
       }, {
@@ -2498,7 +2366,7 @@ matematica: [{
       correct: 0
       }, {
       question: "Das opções abaixo quais são os intervenientes envolvidos na queda do Homem?",
-      options: ["A Mulher, a Serpente e o Homem", "A Mulher, A serpente e a Maça", "A Mulher, o Homem e a Árvore da Vida", "A Mulher, O Homem e Deus"], 
+      options: ["A Mulher, a Serpente e o Homem", "A Mulher, a serpente e a Maça", "A Mulher, o Homem e a Árvore da Vida", "A Mulher, O Homem e Deus"], 
       correct: 0
       }, {
         question: "Quem lhe foi aumentado a dor do parto?",
@@ -2506,7 +2374,7 @@ matematica: [{
       correct: 1
       }, {
       question: "A quem lhe foi decretado uma vida amaldiçoada, condenada a andar sobre o seu proprio ventre e comer o pó da Terra?",
-      options: ["O homem", "A Mulher", "A árvore da Vida", "A serpente"], 
+      options: ["O homem", "A mulher", "A árvore da Vida", "A serpente"], 
       correct: 3
       }, {
       question: "Quem lhe foi senteciado a sofrer para poder viver do seu suor?",
@@ -2552,7 +2420,7 @@ matematica: [{
       correct: 3
       }, {
       question: "Quem é o único mediador entre Deus e os homens, segundo 1 Timóteo 2:5?",
-      options: ["Moisés", "O Espírito Santo", "Jesus Cristo", "Paulo"],
+      options: ["Moisés", "João Batista", "Jesus Cristo", "Paulo"],
       correct: 2
       }, {
       question: "De acordo com João 3:16, o que Deus fez para nos dar a salvação?",
@@ -2593,7 +2461,7 @@ matematica: [{
       options: ["Moisés", "João Batista", "Jesus Cristo", "Paulo"],
       correct: 2
       }, {
-      question: "Qual foi o propósito principal das leis dadas por Deus no Antigo Testamento?",
+      question: "Qual é o propósito principal das leis dadas por Deus no Antigo Testamento?",
       options: ["Enriquecer o povo de Israel", "Tornar Israel mais poderoso militarmente", "Afastar Israel dos povos vizinhos", "Demonstrar a necessidade de obediência e santidade"],
       correct: 2
       }, {
@@ -2639,10 +2507,10 @@ matematica: [{
       correct: 0
       }, {
       question: "O que é jejum, segundo a Bíblia?",
-      options: ["Uma forma de purificação física", "Abstenção de alimentos para buscar a Deus", "Um ritual obrigatório para todos os crentes", "Uma forma de disciplina física para perder peso"],
+      options: ["Uma forma de purificação física", "Abstenção de alimentos para buscar a Deus", "Um ritual obrigatório para todos os crentes", "Uma prática de preservação sem reflexão"],
       correct: 1
       }, {
-      question: "Qual foi o propósito do jejum de Jesus no deserto?",
+      question: "Qual é o propósito do jejum de Jesus no deserto?",
       options: ["Ganhar força física", "Cumprir um ritual judaico", "Mostrar ao diabo seu poder", "Buscar poder espiritual e resistir à tentação"],
       correct: 3
       }, {
@@ -2654,7 +2522,7 @@ matematica: [{
       options: ["3 dias e 3 noites", "21 dias e 21 noite", "40 dias e 40 noites", "7 dias e 7 noites"],
       correct: 2
       }, {
-      question: "Qual foi o jejum realizado por Ester e o povo judeu?",
+      question: "Qual é o jejum realizado por Ester e o povo judeu?",
       options: ["3 dias e 3 noites sem comer nem beber", "7 dias comendo apenas pão e água", "40 dias de abstenção parcial", "Apenas durante o período da manhã"],
       correct: 0
       }, {
@@ -2666,11 +2534,11 @@ matematica: [{
       options: ["Josué", "Neemias", "Jeosafá", "Gideão"],
       correct: 2
       }, {
-      question: "Qual foi o jejum realizado por Daniel?",
+      question: "Qual é o jejum realizado por Daniel?",
       options: ["Abstinência total de alimentos por 40 dias", "Consumo apenas de legumes, frutas e água", "Jejum de pão e carne por 7 dias", "Apenas abstinência de água"],
       correct: 1
       }, {
-      question: "Segundo Joel 2:12, o jejum deve ser acompanhado de qual atitude?",
+      question: "De acordo com Joel 2:12, o jejum deve ser acompanhado de qual atitude?",
       options: ["Arrependimento sincero e busca por Deus de todo o coração", "Alegria e celebração", "Uma oferta especial no templo", "Reuniões públicas de oração"],
       correct: 0
       },
@@ -2761,54 +2629,6 @@ matematica: [{
       options: ["Cérebro", "Medula espinhal", "Nervos periféricos", "Cerebelo"],
       correct: 1
     }, {
-      question: "Qual é o nome do processo pelo qual o RNA é convertido em proteína?",
-      options: ["Replicação", "Transcrição", "Tradução", "Mutação"],
-      correct: 2
-    }, {
-      question: "Qual é a função dos lisossomos na célula?",
-      options: ["Produzir energia", "Digirir substâncias", "Armazenar água", "Sintetizar proteínas"],
-      correct: 1
-    }, {
-      question: "Qual é o tecido responsável pelo transporte de nutrientes nas plantas?",
-      options: ["Xilema", "Floema", "Estômato", "Meristema"],
-      correct: 1
-    }, {
-      question: "Qual é o nome do processo em que uma célula engole partículas externas?",
-      options: ["Exocitose", "Endocitose", "Pinocitose", "Fagocitose"],
-      correct: 3
-    }, {
-      question: "Qual é o tipo de célula que não possui núcleo definido?",
-      options: ["Procarionte", "Eucarionte", "Animal", "Vegetal"],
-      correct: 0
-    }, {
-      question: "Qual é a molécula que fornece energia para as células?",
-      options: ["ATP", "DNA", "RNA", "Proteína"],
-      correct: 0
-    }, {
-      question: "Qual é o nome da fase do ciclo celular em que o DNA é duplicado?",
-      options: ["Mitose", "Interfase", "Meiose", "Citocinese"],
-      correct: 1
-    }, {
-      question: "Qual é a função dos ribossomos?",
-      options: ["Produzir proteínas", "Transportar oxigênio", "Armazenar energia", "Sintetizar lipídios"],
-      correct: 0
-    }, {
-      question: "Qual é a estrutura que protege as células vegetais?",
-      options: ["Membrana plasmática", "Parede celular", "Núcleo", "Vacuolo"],
-      correct: 1
-    }, {
-      question: "Qual é a base nitrogenada exclusiva do RNA?",
-      options: ["Adenina", "Timina", "Uracila", "Guanina"],
-      correct: 2
-    }, {
-      question: "Qual é o grupo taxonômico mais específico?",
-      options: ["Reino", "Filo", "Gênero", "Espécie"],
-      correct: 3
-    }, {
-      question: "Qual é a função dos estômatos nas plantas?",
-      options: ["Absorver nutrientes", "Permitir trocas gasosas", "Transportar água", "Armazenar energia"],
-      correct: 1
-    }, {
       question: "Qual é o nome da molécula que carrega os genes?",
       options: ["RNA", "DNA", "Proteína", "ATP"],
       correct: 1
@@ -2845,7 +2665,7 @@ matematica: [{
       options: ["Desequilíbrio interno", "Estabilidade do ambiente interno", "Troca de gases", "Crescimento celular"],
       correct: 1
     }, {
-      question: "Qual é o nome da molécula que armazena energia nos músculos?",
+      question: "Qual é a molécula que armazena energia nos músculos?",
       options: ["ATP", "Glicose", "Ácido lático", "Creatina"],
       correct: 3
     }, {
@@ -3052,7 +2872,7 @@ matematica: [{
         "Um mercado com apenas um fornecedor dominante.",
         "Um mercado onde muitos compradores e vendedores negociam livremente.",
         "Um mercado onde os preços são fixados pelo governo.",
-        "Um mercado com baixos índices de consumo."
+        "Um mercado sem regulação governamental."
       ],
       correct: 1
     }, {
@@ -3105,7 +2925,7 @@ matematica: [{
       options: [
         "O custo de produzir bens em grande escala.",
         "O benefício perdido ao escolher uma alternativa em vez de outra.",
-        "O custo de oportunidade de não investir.",
+        "A troca de recursos para produzir diferentes bens.",
         "O preço total pago por um bem ou serviço."
       ],
       correct: 1
@@ -3223,7 +3043,7 @@ matematica: [{
       ],
       "correct": 0
     }, {
-      "question": "Qual país é conhecido como o 'berço da civilização ocidental'?",
+      "question": "Qual é o país conhecido como o 'berço da civilização ocidental'?",
       "options": [
         "Egito",
         "Grécia",
@@ -3304,23 +3124,41 @@ matematica: [{
       ],
       "correct": 2
     }, {
-      "question": "Qual província de Moçambique é conhecida pela produção de gás natural?",
+      "question": "Qual é o grupo étnico conhecido por suas máscaras tradicionais em Moçambique?",
       "options": [
-        "Tete",
-        "Cabo Delgado",
-        "Inhambane",
-        "Manica"
+        "Macuas",
+        "Tsongas",
+        "Chopes",
+        "Shonas"
       ],
-      "correct": 1
+      "correct": 0
     }, {
-      "question": "Qual cidade é o principal centro econômico de Moçambique?",
+      "question": "Qual é a principal consequência da Guerra Civil em Moçambique?",
       "options": [
-        "Nampula",
-        "Maputo",
-        "Beira",
-        "Chimoio"
+        "Destruição de infraestruturas",
+        "Aumento da produção",
+        "Fortalecimento do comércio",
+        "Melhora na educação"
       ],
-      "correct": 1
+      "correct": 0
+    }, {
+      "question": "Qual é o idioma mais falado em Moçambique?",
+      "options": [
+        "Português",
+        "Inglês",
+        "Swahili",
+        "Changana"
+      ],
+      "correct": 0
+    }, {
+      "question": "Qual é o significado de 'ubunto'?",
+      "options": [
+        "Humanidade para com os outros",
+        "Compartilhar recursos",
+        "Respeitar a natureza",
+        "Trabalhar sozinho"
+      ],
+      "correct": 0
     }],
 
     etica: [{
@@ -3507,92 +3345,182 @@ matematica: [{
 
     cultura: [{
       "question": "Qual é a dança tradicional da região sul de Moçambique?",
-      "options": ["Mapiko", "Xigubo", "Marrebenta", "Ngalanga"],
+      "options": [
+        "Mapiko",
+        "Xigubo",
+        "Marrebenta",
+        "Ngalanga"
+      ],
       "correct": 1
     },
     {
       "question": "Qual é o prato tradicional amplamente consumido em Moçambique?",
-      "options": ["Matapa", "Feijoada", "Cuscuz", "Sushi"],
+      "options": [
+        "Matapa",
+        "Feijoada",
+        "Cuscuz",
+        "Sushi"
+      ],
       "correct": 0
     },
     {
       "question": "Qual é a língua oficial de Moçambique?",
-      "options": ["Inglês", "Português", "Swahili", "Changana"],
+      "options": [
+        "Inglês",
+        "Português",
+        "Swahili",
+        "Changana"
+      ],
       "correct": 1
     },
     {
       "question": "Qual é o nome da cerimônia tradicional realizada para celebrar casamentos em Moçambique?",
-      "options": ["Lobolo", "Batizado", "Ngoma", "Xigubo"],
+      "options": [
+        "Lobolo",
+        "Batizado",
+        "Ngoma",
+        "Xigubo"
+      ],
       "correct": 0
     },
     {
       "question": "Qual é o instrumento musical tradicional usado na dança Mapiko?",
-      "options": ["Tambor", "Piano", "Violino", "Flauta"],
+      "options": [
+        "Tambor",
+        "Piano",
+        "Violino",
+        "Flauta"
+      ],
       "correct": 0
     },
     {
       "question": "Qual é o grupo étnico conhecido por suas máscaras tradicionais em Moçambique?",
-      "options": ["Macuas", "Tsongas", "Chopes", "Shonas"],
+      "options": [
+        "Macuas",
+        "Tsongas",
+        "Chopes",
+        "Shonas"
+      ],
       "correct": 0
     },
     {
       "question": "Qual é a bebida tradicional feita de milho fermentado em Moçambique?",
-      "options": ["Tchipwo", "Maheu", "Marula", "Cerveja"],
+      "options": [
+        "Tchipwo",
+        "Maheu",
+        "Marula",
+        "Cerveja"
+      ],
       "correct": 1
     },
     {
       "question": "Qual é o gênero musical popular originado em Moçambique?",
-      "options": ["Marrebenta", "Kizomba", "Semba", "Kuduro"],
+      "options": [
+        "Marrebenta",
+        "Kizomba",
+        "Semba",
+        "Kuduro"
+      ],
       "correct": 0
     },
     {
       "question": "Qual é o significado do termo 'Ngoma' em algumas culturas moçambicanas?",
-      "options": ["Dança", "Instrumento", "Celebração", "Todos os anteriores"],
+      "options": [
+        "Dança",
+        "Instrumento",
+        "Celebração",
+        "Todos os anteriores"
+      ],
       "correct": 3
     },
     {
       "question": "Quem é um dos escritores moçambicanos mais conhecidos por obras sobre a cultura local?",
-      "options": ["Mia Couto", "Pepetela", "Chinua Achebe", "José Saramago"],
+      "options": [
+        "Mia Couto",
+        "Pepetela",
+        "Chinua Achebe",
+        "José Saramago"
+      ],
       "correct": 0
     },
     {
       "question": "Qual é a religião predominante em Moçambique?",
-      "options": ["Cristianismo", "Islamismo", "Hinduísmo", "Budismo"],
+      "options": [
+        "Cristianismo",
+        "Islamismo",
+        "Hinduísmo",
+        "Budismo"
+      ],
       "correct": 0
     },
     {
       "question": "Qual é o material tradicionalmente usado para construir casas em áreas rurais moçambicanas?",
-      "options": ["Madeira e palha", "Concreto", "Aço", "Vidro"],
+      "options": [
+        "Madeira e palha",
+        "Concreto",
+        "Aço",
+        "Vidro"
+      ],
       "correct": 0
     },
     {
       "question": "Qual é o festival cultural que celebra a dança e a música em Moçambique?",
-      "options": ["Festival Marrabenta", "Carnaval de Maputo", "Festival de Zalala", "Festival de Chigubo"],
+      "options": [
+        "Festival Marrabenta",
+        "Carnaval de Maputo",
+        "Festival de Zalala",
+        "Festival de Chigubo"
+      ],
       "correct": 0
     },
     {
       "question": "O que simboliza a capulana na cultura moçambicana?",
-      "options": ["Respeito e tradição", "Riqueza", "Modernidade", "Religião"],
+      "options": [
+        "Respeito e tradição",
+        "Riqueza",
+        "Modernidade",
+        "Religião"
+      ],
       "correct": 0
     },
     {
       "question": "Qual é a prática tradicional usada para transmitir conhecimentos em Moçambique?",
-      "options": ["Narrativas orais", "Livros", "Filmes", "Internet"],
+      "options": [
+        "Narrativas orais",
+        "Livros",
+        "Filmes",
+        "Internet"
+      ],
       "correct": 0
     },
     {
       "question": "Qual é o principal produto artesanal produzido em Moçambique?",
-      "options": ["Esculturas de madeira", "Cerâmica", "Tapeçarias", "Joias"],
+      "options": [
+        "Esculturas de madeira",
+        "Cerâmica",
+        "Tapeçarias",
+        "Joias"
+      ],
       "correct": 0
     },
     {
       "question": "O que é Matapa na culinária moçambicana?",
-      "options": ["Um prato de mandioca com amendoim", "Uma sobremesa de frutas", "Uma sopa de peixe", "Um pão tradicional"],
+      "options": [
+        "Um prato de mandioca com amendoim",
+        "Uma sobremesa de frutas",
+        "Uma sopa de peixe",
+        "Um pão tradicional"
+      ],
       "correct": 0
     },
     {
       "question": "Qual é o grupo étnico conhecido pela produção de instrumentos musicais tradicionais?",
-      "options": ["Chopes", "Makondes", "Swahilis", "Nhúngues"],
+      "options": [
+        "Chopes",
+        "Makondes",
+        "Swahilis",
+        "Nhúngues"
+      ],
       "correct": 1
     },
     {
@@ -3607,28 +3535,53 @@ matematica: [{
     },
     {
       "question": "Qual é o idioma mais falado na região sul de Moçambique além do português?",
-      "options": ["Changana", "Macua", "Sena", "Lomwe"],
+      "options": [
+        "Changana",
+        "Macua",
+        "Sena",
+        "Lomwe"
+      ],
       "correct": 0
     }],
 
     direito: [{
       "question": "Qual é a Constituição atualmente em vigor em Moçambique?",
-      "options": ["Constituição de 1975", "Constituição de 1990", "Constituição de 2004", "Constituição de 2010"],
+      "options": [
+        "Constituição de 1975",
+        "Constituição de 1990",
+        "Constituição de 2004",
+        "Constituição de 2010"
+      ],
       "correct": 2
     },
     {
       "question": "Qual é o sistema jurídico adotado por Moçambique?",
-      "options": ["Sistema Romano-Germânico", "Sistema Anglo-Saxão", "Sistema Costumeiro", "Sistema Islâmico"],
+      "options": [
+        "Sistema Romano-Germânico",
+        "Sistema Anglo-Saxão",
+        "Sistema Costumeiro",
+        "Sistema Islâmico"
+      ],
       "correct": 0
     },
     {
       "question": "Quem exerce o poder legislativo em Moçambique?",
-      "options": ["Presidente da República", "Assembleia da República", "Tribunal Supremo", "Primeiro-Ministro"],
+      "options": [
+        "Presidente da República",
+        "Assembleia da República",
+        "Tribunal Supremo",
+        "Primeiro-Ministro"
+      ],
       "correct": 1
     },
     {
       "question": "Quantos poderes soberanos existem segundo a Constituição de Moçambique?",
-      "options": ["Dois", "Três", "Quatro", "Cinco"],
+      "options": [
+        "Dois",
+        "Três",
+        "Quatro",
+        "Cinco"
+      ],
       "correct": 1
     },
     {
@@ -3643,12 +3596,22 @@ matematica: [{
     },
     {
       "question": "Quem é o Chefe de Estado em Moçambique?",
-      "options": ["Primeiro-Ministro", "Presidente da República", "Presidente da Assembleia", "Governador Provincial"],
+      "options": [
+        "Primeiro-Ministro",
+        "Presidente da República",
+        "Presidente da Assembleia",
+        "Governador Provincial"
+      ],
       "correct": 1
     },
     {
       "question": "Qual é o órgão responsável pela administração da justiça em Moçambique?",
-      "options": ["Assembleia da República", "Tribunais", "Conselho de Ministros", "Ministério Público"],
+      "options": [
+        "Assembleia da República",
+        "Tribunais",
+        "Conselho de Ministros",
+        "Ministério Público"
+      ],
       "correct": 1
     },
       {
@@ -3663,7 +3626,12 @@ matematica: [{
     },
     {
       "question": "Qual é a idade mínima para votar em Moçambique?",
-      "options": ["16 anos", "18 anos", "21 anos", "25 anos"],
+      "options": [
+        "16 anos",
+        "18 anos",
+        "21 anos",
+        "25 anos"
+      ],
       "correct": 1
     },
     {
@@ -3688,12 +3656,22 @@ matematica: [{
     },
     {
       "question": "Quem representa o Estado em processos criminais?",
-      "options": ["Advogados de defesa", "Juízes", "Ministério Público", "Assembleia da República"],
+      "options": [
+        "Advogados de defesa",
+        "Juízes",
+        "Ministério Público",
+        "Assembleia da República"
+      ],
       "correct": 2
     },
     {
       "question": "Qual é o prazo de mandato do Presidente da República em Moçambique?",
-      "options": ["4 anos", "5 anos", "6 anos", "7 anos"],
+      "options": [
+        "4 anos",
+        "5 anos",
+        "6 anos",
+        "7 anos"
+      ],
       "correct": 1
     },
     {
@@ -3728,7 +3706,12 @@ matematica: [{
     },
     {
       "question": "Qual é a principal fonte de receita do Estado em Moçambique?",
-      "options": ["Impostos", "Doações", "Exportações", "Multas"],
+      "options": [
+        "Impostos",
+        "Doações",
+        "Exportações",
+        "Multas"
+      ],
       "correct": 0
     },
     {
@@ -3743,7 +3726,12 @@ matematica: [{
     },
     {
       "question": "Quem nomeia o Primeiro-Ministro em Moçambique?",
-      "options": ["Assembleia da República", "Presidente da República", "Tribunal Supremo", "Governo Provincial"],
+      "options": [
+        "Assembleia da República",
+        "Presidente da República",
+        "Tribunal Supremo",
+        "Governo Provincial"
+      ],
       "correct": 1
     },
     {
@@ -3852,7 +3840,7 @@ matematica: [{
       "correct": 2
     },
     {
-      "question": "What is the plural form of 'mouse'?",
+      "question": "What is the plural of 'mouse'?",
       "options": ["Mouses", "Mice", "Mouse", "Mices"],
       "correct": 1
     },
@@ -3907,9 +3895,9 @@ matematica: [{
       "correct": 0
     },
     {
-      "question": "What is the past tense of 'eat'?",
-      "options": ["Eated", "Ate", "Eating", "Eats"],
-      "correct": 1
+      "question": "What is the past tense of 'write'?",
+      "options": ["Wrote", "Written", "Writing", "Writes"],
+      "correct": 0
     },
     {
       "question": "Complete the sentence: 'We _____ to the park yesterday.'",
@@ -4278,12 +4266,12 @@ function downloadResults() {
     yPos += 25;
     const answers = JSON.parse(sessionStorage.getItem(`answers_${activity.id}`)) || [];
     if (answers.length > 0) {
-      answers.forEach((answer, answerIndex) => {
+      answers.forEach((answer, idx) => {
         if (yPos > 250) {
           doc.addPage();
           yPos = 20;
         }
-        doc.text(`Pergunta ${answerIndex + 1}: ${answer.question}`, 20, yPos);
+        doc.text(`Pergunta ${idx + 1}: ${answer.question}`, 20, yPos);
         doc.text(`Sua resposta: ${answer.selectedAnswer}`, 25, yPos + 5);
         doc.text(`Resposta correta: ${answer.correctAnswer}`, 25, yPos + 10);
         doc.text(`Resultado: ${answer.isCorrect ? "Correto" : "Incorreto"}`, 25, yPos + 15);
@@ -4332,7 +4320,6 @@ function downloadSession(sessionId) {
     yPos += 20;
     doc.setFontSize(12);
     doc.text(`Usuário: ${currentUser.name}`, 15, yPos);
-    yPos += 10;
     const sessionTime = localStorage.getItem('startTime');
     const timeDiff = sessionTime ? formatTimeDuration(Math.floor((new Date() - parseInt(sessionTime)) / 1000)) : '00:00:00';
     doc.text(`Tempo de Sessão: ${timeDiff}`, 15, yPos);
@@ -4349,12 +4336,12 @@ function downloadSession(sessionId) {
     doc.text(`Tempo Gasto: ${activity.timeSpent}`, 20, yPos + 15);
     yPos += 25;
     if (answers.length > 0) {
-      answers.forEach((answer, answerIndex) => {
+      answers.forEach((answer, index) => {
         if (yPos > 250) {
           doc.addPage();
           yPos = 20;
         }
-        doc.text(`Pergunta ${answerIndex + 1}: ${answer.question}`, 20, yPos);
+        doc.text(`Pergunta ${index + 1}: ${answer.question}`, 20, yPos);
         doc.text(`Sua resposta: ${answer.selectedAnswer}`, 25, yPos + 5);
         doc.text(`Resposta correta: ${answer.correctAnswer}`, 25, yPos + 10);
         doc.text(`Resultado: ${answer.isCorrect ? "Correto" : "Incorreto"}`, 25, yPos + 15);
@@ -4393,31 +4380,37 @@ function getSubjectContent(subject) {
           <p>Uma expressão algébrica é uma combinação de números e letras unidos por operações matemáticas.</p>
           <p>Seção 2: Equações Lineares</p>
           <p>As equações lineares são a base para resolver problemas matemáticos mais complexos.</p>
-          <div class="page-break"></div>
-          <h4>Capítulo 1 - Continuação</h4>
           <p>Seção 3: Polinômios</p>
           <p>Os polinômios são expressões formadas pela soma de monômios.</p>
           <p>Seção 4: Fatoração</p>
-          <p>A fatoração é o processo de decompor uma expressão algébrica.</p>`
-      }, {
-        title: "Capítulo 2: Geometria",
-        image: "https://example.com/images/geometry1.svg",
-        text: `
-          <div class="section-header">
-            <h3>Capítulo 2: Geometria</h3>
-          </div>
-          <img src="https://example.com/images/geometry1.svg" alt="Geometria">
-          <p class="chapter-text">A geometria é o estudo das formas e suas propriedades no espaço.
-          Este capítulo aborda os fundamentos da geometria plana e espacial.</p>
-          <p>Seção 1: Ângulos e Retas</p>
-          <p>Estudo das relações entre retas e ângulos no plano.</p>
-          <p>Seção 2: Polígonos</p>
-          <p>Classificação e propriedades dos polígonos regulares e irregulares.</p>
+          <p>A fatoração é o processo de decompor uma expressão algébrica.</p>
           <div class="page-break"></div>
-          <h4>Capítulo 2 - Continuação</h4>
-          <p>Seção 3: Círculos e Circunferências</p>
-          <p>Propriedades e relações em figuras circulares.</p>`
-      }]
+          <h4>Capítulo 1 - Continuação</h4>
+          <p>Seção 5: Funções</p>
+          <p>As funções são relações entre conjuntos de números.</p>
+          <p>Seção 6: Análise de Dados</p>
+          <p>A análise de dados é o processo de examinar e interpretar informações.</p>
+        `},
+        {
+          title: "Capítulo 2: Geometria",
+          image: "https://example.com/images/geometry1.svg",
+          text: `
+            <div class="section-header">
+              <h3>Capítulo 2: Geometria</h3>
+            </div>
+            <img src="https://example.com/images/geometry1.svg" alt="Geometria">
+            <p class="chapter-text">A geometria é o estudo das formas e suas propriedades no espaço.
+            Este capítulo aborda os fundamentos da geometria plana e espacial.</p>
+            <p>Seção 1: Ângulos e Retas</p>
+            <p>Estudo das relações entre retas e ângulos no plano.</p>
+            <p>Seção 2: Polígonos</p>
+            <p>Classificação e propriedades dos polígonos regulares e irregulares.</p>
+            <div class="page-break"></div>
+            <h4>Capítulo 2 - Continuação</h4>
+            <p>Seção 3: Círculos e Circunferências</p>
+            <p>Propriedades e relações em figuras circulares.</p>
+          `
+        }]
     },
     fisica: {
       author: "João Santos",
@@ -4437,13 +4430,36 @@ function getSubjectContent(subject) {
           <p>Estudo do movimento dos corpos sem considerar as forças que atuam sobre eles.</p>
           <p>Seção 2: Dinâmica</p>
           <p>Estudo das forças e seus efeitos sobre o movimento dos corpos.</p>
-          <div class="page-break"></div>
-          <h4>Capítulo 1 - Continuação</h4>
           <p>Seção 3: Trabalho e Energia</p>
           <p>Relações entre trabalho, energia e movimento.</p>
           <p>Seção 4: Conservação da Energia</p>
-          <p>Princípio da conservação da energia e suas aplicações.</p>`
-      }]
+          <p>Princípio da conservação da energia e suas aplicações.</p>
+          <div class="page-break"></div>
+          <h4>Capítulo 1 - Continuação</h4>
+          <p>Seção 5: Termodinâmica</p>
+          <p>A termodinâmica é o estudo das relações entre calor, trabalho e energia.</p>
+          <p>Seção 6: Ondas e Vibrações</p>
+          <p>As ondas e vibrações são fenômenos físicos que envolvem movimento.</p>
+        `},
+        {
+          title: "Capítulo 2: Eletromagnetismo",
+          image: "https://example.com/images/electromagnetism1.svg",
+          text: `
+            <div class="section-header">
+              <h3>Capítulo 2: Eletromagnetismo</h3>
+            </div>
+            <img src="https://example.com/images/electromagnetism1.svg" alt="Eletromagnetismo">
+            <p class="chapter-text">O eletromagnetismo é o estudo das interações entre correntes elétricas e campos magnéticos.</p>
+            <p>Seção 1: Campos Elétricos</p>
+            <p>Estudo das propriedades dos campos elétricos.</p>
+            <p>Seção 2: Campos Magnéticos</p>
+            <p>Estudo das propriedades dos campos magnéticos.</p>
+            <div class="page-break"></div>
+            <h4>Capítulo 2 - Continuação</h4>
+            <p>Seção 3: Ondas Eletromagnéticas</p>
+            <p>Propriedades e comportamento das ondas eletromagnéticas.</p>
+          `
+        }]
     }
   };
   return contentDatabase[subject] || {
@@ -4458,7 +4474,8 @@ function getSubjectContent(subject) {
           <h3>Conteúdo em Desenvolvimento</h3>
         </div>
         <img src="https://example.com/images/placeholder.svg" alt="Conteúdo em Desenvolvimento">
-        <p>O conteúdo desta disciplina está sendo desenvolvido.</p>`
+        <p>O conteúdo desta disciplina está sendo desenvolvido.</p>
+      `
     }]
   };
 }
@@ -4516,132 +4533,57 @@ function getUserPermissions(username) {
     quiz: []
   };
 }
-function resetIdleTimer() {
+function handleLogout() {
+  sessionStorage.removeItem('visitedQuiz');
+}
+
+function setupIdleDetection() {
+  // Clear any existing idle timer
   if (idleTimer) {
     clearTimeout(idleTimer);
   }
-  const overlay = document.getElementById('idleOverlay');
-  if (overlay.style.display === 'block') {
-    overlay.style.display = 'none';
-  }
-  idleTimer = setTimeout(() => {
-    document.getElementById('idleOverlay').style.display = 'block';
-  }, IDLE_TIMEOUT);
-}
-function setupIdleDetection() {
-  const events = ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart'];
-  events.forEach(event => {
-    document.addEventListener(event, resetIdleTimer, true);
-  });
+
+  // Start monitoring for idle time
+  document.addEventListener('mousemove', resetIdleTimer);
+  document.addEventListener('keypress', resetIdleTimer);
+  document.addEventListener('click', resetIdleTimer);
+  document.addEventListener('scroll', resetIdleTimer);
+  document.addEventListener('touchstart', resetIdleTimer);
+  document.addEventListener('touchmove', resetIdleTimer);
+
+  // Initial setup of idle timer
   resetIdleTimer();
 }
-function showAdminSearchPanel() {
-  const loginForm = document.getElementById('loginForm');
-  loginForm.style.display = 'none';
-  const existingPanel = document.querySelector('.admin-panel');
-  if (existingPanel) {
-    existingPanel.remove();
+
+function resetIdleTimer() {
+  // Clear any existing timer
+  if (idleTimer) {
+    clearTimeout(idleTimer);
   }
-  const adminSearchPanel = document.getElementById('adminSearchPanel');
-  adminSearchPanel.style.display = 'block';
-  const searchInput = document.getElementById('searchUsername');
-  if (searchInput) {
-    searchInput.value = '';
+
+  // Hide idle overlay if visible
+  const idleOverlay = document.getElementById('idleOverlay');
+  if (idleOverlay) {
+    idleOverlay.style.display = 'none';
   }
-  setupIdleDetection();
+
+  // Set new timer
+  idleTimer = setTimeout(showIdleOverlay, IDLE_TIMEOUT);
 }
-function searchUser() {
-  const searchUsername = document.getElementById('searchUsername').value;
-  const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers')) || [];
-  const foundUser = approvedUsers.find(user => user.name === searchUsername);
-  const existingPanel = document.querySelector('.admin-panel');
-  if (existingPanel) {
-    existingPanel.remove();
+
+function showIdleOverlay() {
+  const idleOverlay = document.getElementById('idleOverlay');
+  if (idleOverlay) {
+    idleOverlay.style.display = 'block';
   }
-  if (!foundUser) {
-    alert('Usuário não encontrado. Por favor verifique o nome e tente novamente.');
-    document.getElementById('searchUsername').value = '';
-    return;
-  }
-  document.getElementById('adminSearchPanel').style.display = 'none';
-  const adminPanel = document.createElement('div');
-  adminPanel.className = 'admin-panel';
-  adminPanel.innerHTML = `
-    <div class="admin-header">
-      <h2>Informações do Usuário: ${foundUser.name}</h2>
-      <div class="admin-nav">
-        <button class="admin-button" onclick="showAdminSearchPanel()">Nova Busca</button>
-        <button class="admin-button" onclick="adminLogout()">Sair</button>
-      </div>
-    </div>
-    <div class="admin-content">
-    </div>
-  `;
-  document.body.appendChild(adminPanel);
-  showUserDetails(approvedUsers.indexOf(foundUser));
 }
-function showUserDetails(index) {
+
+function toggleBlockStudent(index, shouldBlock) {
   const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers'));
-  const foundUser = approvedUsers[index];
-  const adminContent = document.querySelector('.admin-content');
-  adminContent.innerHTML = `
-    <div class="student-profile-card">
-      <h4>Detalhes do Usuário</h4>
-      <p><strong>Nome:</strong> ${foundUser.name}</p>
-      <p><strong>Email:</strong> ${foundUser.email}</p>
-      <p><strong>Telefone:</strong> ${foundUser.phone || 'Não informado'}</p>
-      <p><strong>Nível Acadêmico:</strong> ${foundUser.academicLevel}</p>
-      <p><strong>Data de Registro:</strong> ${foundUser.registrationDate}</p>
-      <div class="button-group">
-        <button class="view-answers-button" onclick="viewStudentAnswers(${index})">Ver Histórico</button>
-      </div>
-    </div>
-  `;
+  approvedUsers[index].blocked = shouldBlock;
+  localStorage.setItem('approvedUsers', JSON.stringify(approvedUsers));
+  showStudentList();
 }
-function handleLogout() {
-  sessionStorage.removeItem('visitedQuiz');
-}</script>
-
-
-
-
-  
-  
-<!-- Firebase SDK -->
-<script type="module">
-  // Importa os módulos do Firebase
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-  import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-  import { getDatabase } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
-  import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-  import { getStorage } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
-
-  // Configuração do Firebase
-  const firebaseConfig = {
-    apiKey: "AIzaSyAJzL6sk0pDZtC-jtbpLNNR1dlQ94D9ccA",
-    authDomain: "mea2024-d8f25.firebaseapp.com",
-    databaseURL: "https://mea2024-d8f25-default-rtdb.firebaseio.com",
-    projectId: "mea2024-d8f25",
-    storageBucket: "mea2024-d8f25.appspot.com",
-    messagingSenderId: "770842232248",
-    appId: "1:770842232248:web:f3da86205a5b3e6afbfb4d",
-    measurementId: "G-2GMQCP11CF"
-  };
-
-  // Inicializa o Firebase
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
-  const database = getDatabase(app);
-  const firestore = getFirestore(app);
-  const storage = getStorage(app);
-
-  console.log("Firebase inicializado com sucesso!");
 </script>
-
-
-
-
-
-
 </body>
 </html>
